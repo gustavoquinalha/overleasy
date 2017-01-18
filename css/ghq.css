@@ -516,7 +516,7 @@ a {
     height: 100px;
 }
 .picc {
-    width: 88px;
+    width:100%;
     margin: 0 auto;
     height: 88px;
     background: #3D6AD6;
