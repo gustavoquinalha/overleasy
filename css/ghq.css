@@ -678,12 +678,16 @@ button:hover {
     width: 100%
 }
 .rodape {
-    background: #fff;
+    background: #3D6AD6;
+    color: #fff;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: center;
     font-size: 14px;
+}
+.rodape a {
+  color: #fff;
 }
 .foto-perfil-p {
     width: 40px;
