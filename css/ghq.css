@@ -275,6 +275,15 @@ input:focus {
     height: 170px;
     border: 3px solid #fff;
     box-shadow: 0px 1px 1px 1px #d0d1d5;
+    border-radius: 3px;
+    display: inline-block;
+}
+.foto-perfil2 {
+    background: #3d6ad6;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #fff;
+    box-shadow: 0px 1px 1px 1px #d0d1d5;
     border-radius: 3px
 }
 .fFotoPerfil {
@@ -326,6 +335,17 @@ input:focus {
 .dados-pagina {
     max-width: 170px;
     margin-top: 10px;
+}
+.dados-pagina2 {
+    width: 80%;
+    margin-top: 10px;
+    display: inline-block;
+    right: 0;
+    position: absolute;
+    top: 0
+}
+.ffv {
+  width: 20%;
 }
 .dados-pagina h1 {
     opacity: 0.8;
@@ -383,6 +403,7 @@ input:focus {
 .iteme {
     flex-grow: 1;
     flex-basis: 300px;
+    margin: 0 auto
 }
 .item2 {
     flex-grow: 12;
@@ -411,6 +432,7 @@ input:focus {
 }
 .idd {
     padding-top: 10px;
+
 }
 .fix {
     width: 95%;
@@ -419,6 +441,8 @@ input:focus {
 .destaque {
     padding-top: 10px;
     margin-top: 10px;
+}
+.buttons {
 }
 .buttons ul {
     list-style: none;
@@ -429,9 +453,18 @@ input:focus {
 .buttons ul li span {
     color: #4267B2
 }
+.buttonsr {
+  padding-bottom: 10px;
+}
 .buttonsr ul {
     list-style: none;
-    float: right
+    text-align: right;
+}
+.eaw {
+  order:2
+}
+.ewa {
+  order:1
 }
 .buttonsr ul li {
     display: inline-block;
@@ -751,6 +784,11 @@ img {
 .pho:hover {
   opacity: 0.9;
 }
+.respp {
+  display: none;
+  width: 100%;
+  margin-bottom: 10px;
+}
 .desta2 {
     border: 1px solid #ced0d4;
     border-radius: 3px;
@@ -762,9 +800,47 @@ img {
     margin-left: 10px;
     width: 100px;
 }
-@media only screen and (max-width: 768px) {
+.oaa {
+  display: none
+}
+.oaaa {
+  display: block
+}
+@media only screen and (max-width: 983px) {
     .fl {
         display: none
     }
+    .buttons {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 10px
+    }
+    .buttonsr {
+      text-align: center;
+      margin: 0 auto
+    }
+    .buttonsr ul {
+        text-align: center;
+    }
+    .eaw {
+      order:1
+    }
+    .ewa {
+      order:2
+    }
+}
+
+@media only screen and (max-width: 500px) {
+  .respp {
+    display: block
+  }
+  .oaa {
+    display: block
+  }
+
+  .oaaa {
+    display: none
+  }
+  .cad {
 
 }
