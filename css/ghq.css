@@ -43,6 +43,11 @@ input:focus {
 .el {
     margin-left: 10px;
 }
+.pad {
+  position: absolute;
+  top:4px;
+  right: 4px;
+}
 .po {
     background: #fff;
     border-radius: 2px;
@@ -50,7 +55,7 @@ input:focus {
     text-align: left;
 }
 .pes img {
-    padding-top: 4 px;
+    padding-top: 10 px;
 }
 .po input {
     width: 90%;
