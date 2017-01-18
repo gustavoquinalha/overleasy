@@ -841,6 +841,14 @@ img {
   .oaaa {
     display: none
   }
-  .cad {
+  .criar {
+    width: 340px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .content-l {
+    width: 100%;
+    margin: 0 auto
+  }
 
 }
