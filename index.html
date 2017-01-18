@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>OVERLEASY</title>
-    <link rel="stylesheet" href="css/ghq.css">
-  </head>
-  <body>
+
+<head>
+  <meta charset="utf-8">
+  <title>OVERLEASY</title>
+  <link rel="stylesheet" href="css/ghq.css">
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/html2canvas.js"></script>
+  <script type="text/javascript" src="js/canvas2image.js"></script>
+</head>
+
+<body>
+  <div class="widget" id="widget">
     <div class="rela">
       <div class="top fixed">
         <div class="content-menu flex">
@@ -22,7 +28,7 @@
           </div>
           <div class="logoo rel">
             <div class="app">
-
+              <img id="blahfghi" class="appl" src="" alt=" " />
             </div>
             <div class="lg">
               Overleasy
@@ -36,448 +42,532 @@
           <div class="logoo">
             <div class="iconss">
               <img src="img/user.svg" width="18" alt="" />
-                <img src="img/messenger2.svg" width="18" alt="" />
-                  <img src="img/world2.svg" width="18" alt="" />
+              <img src="img/messenger2.svg" width="18" alt="" />
+              <img src="img/world2.svg" width="18" alt="" />
             </div>
           </div>
           <div class="logoo">
             <div class="iconss">
               <img src="img/account.svg" width="11" alt="" />
-                <img src="img/adown.svg" width="11" alt="" />
+              <img src="img/adown.svg" width="11" alt="" />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="content">
-      <div class="content-flex flex">
-        <div class="flex-item fl rel">
-          <div class="content-left">
-            <div class="content-l">
-              <div class="cem">
-                <div class="foto-perfil">
-
-                </div>
-                <div class="dados-pagina">
-                  <h1>Overleasy</h1>
-                  <h2>@Overleasy</h2>
-                  <ul class="menu">
-                    <li><span>Página Inicial</span></li>
-                    <li>Sobre</li>
-                    <li>Curtidas</li>
-                    <li>Videos</li>
-                    <li>Eventos</li>
-                    <li>Publicacoes</li>
-                  </ul>
-                  <div class="btnn">
-                    <button type="button" name="button" class="criar">Criar uma página</button>
+    <form name="myForm">
+      <div class="content">
+        <div class="content-flex flex">
+          <div class="rel">
+            <div class="flgg">
+                <div class="content-l">
+                  <div class="cem">
+                    <div class="foto-perfil">
+                      <form id="form1" runat="server">
+                        <div class="rel">
+                          <div class="inpuu">
+                            <input type="file" id="imgInp" name="imgInp" class="aa" />
+                            <label for="imgInp"><img src="img/photo-camera.svg" width="15" class="pho" alt="" />
+                            </label>
+                          </div>
+                          <img id="blahf" class="fFotoPerfil" src="" alt=" " />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="dados-pagina">
+                      <h1>Overleasy</h1>
+                      <h2>@Overleasy</h2>
+                      <ul class="menu fl">
+                        <li><span>Página Inicial</span>
+                        </li>
+                        <li>Sobre</li>
+                        <li>Curtidas</li>
+                        <li>Videos</li>
+                        <li>Eventos</li>
+                        <li>Publicacoes</li>
+                      </ul>
+                      <div class="btnn">
+                        <button type="button" id="btnSave" name="button" class="criar">SALVAR OVERLEASY</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
-        </div>
-        <div class="flex-item content-right">
-          <div class="oito">
-            <div class="capa">
 
-            </div>
-            <div class="info">
-            <div class="fix">
-              <div class="flex-b">
-                <div class="item">
-                  <div class="buttons">
-                    <ul>
-                      <li><button class="btnc" type="button" name="button"><img src="img/like.svg" class="btna" alt="" />Curtir</button></li>
-                      <li><button class="btnc" type="button" name="button"><img src="img/feed.svg" class="btna" alt="" />Seguir</button></li>
-                      <li><button class="btnc" type="button" name="button"><img src="img/reply.svg" class="btna" alt="" />Compartilhar</button></li>
-                      <li><button class="btnc" type="button" name="button"><img src="img/more.svg" class="btna" alt="" />Mais</button></li>
-                    </ul>
+          <div class="content-right">
+            <div class="oito">
+              <div class="capa">
+                <form id="form2">
+                  <div class="rel">
+                    <div class="inpuu">
+                      <input type="file" id="imgInpp" name="imgInpp" class="aa" />
+                      <label for="imgInpp"><img src="img/photo-camera.svg" width="15" class="pho" alt="" />
+                      </label>
+                    </div>
+                    <img id="capah" class="fFotoCapa" src="" alt=" " />
                   </div>
-                </div>
-                <div class="item">
-                  <div class="buttonsr">
-                    <ul>
-                      <li><button class="cad" type="button" name="button">Cadastre-se</button></li>
-                      <li><button class="btnc" type="button" name="button"><img src="img/messenger.svg" class="btna" alt="" />Enviar Mensagem</button></li>
-                    </ul>
-                  </div>
-                </div>
+                </form>
               </div>
-            </div>
-            </div>
-
-            <div class="flex-b destaque">
-              <div class="item2">
-                <div class="post estilo">
-                  <div class="fix">
-                    <div class="destaquer">
-                      <h1>Em destaque para você</h1>
-                      <div class="rel">
-                        <div class="next">
-                          <div class="nex">
-                            <img src="img/right.svg" width="20px" alt="" />
-                          </div>
-                        </div>
-                      </div>
-                      <div class="dest">
-                        <div class="desta">
-
-                          <div class="fix">
-                            Overleasy facebook <a href="#">Confira</a>
-                            <div class="close">
-                              <img src="img/close.svg" class="btnc" alt="" />
-                            </div>
-                          </div>
-                          <div class="destaque-img">
-
-                          </div>
-                          <div class="fix">
-                            <div class="resp">
-                              Taxa de resposta de 95%<br>
-                              <span>Normalmente responde instantaneamente</span>
-                              <div class="right">
-                                <button type="button" name="button">Mensagem</button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="desta2">
-                          <div class="fix">
-                            <div class="el">
-                              Overleasy
-                            </div>
-                          </div>
-                          <div class="destaque-img">
-
-                          </div>
-                          <div class="fix">
-                            <div class="resp">
-                              <div class="fix">
-                                Teey!<br>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-
-                <div class="post estilo">
-                  <div class="fix">
-                    <div class="post-topo">
-                      <div class="post-foto">
-                      </div>
-                      <div class="post-info rel">
-                        <span class="post-titulo">Overleasy</span>
-                        <span class="time">1 de julho de 2016 . <img src="img/world.svg" width="11" alt="" /></span>
-                        <div class="post-v"><img src="img/down.svg" class="down" alt="" /></div>
-                      </div>
-                    </div>
-                    <div class="post-p">
-
-                    </div>
-                    <div class="post-buttons">
+              <div class="info">
+                <div class="fix">
+                  <div class="flex-b">
+                    <div class="item">
                       <div class="buttons">
                         <ul>
-                          <li><button class="btncc" type="button" name="button"><img src="img/like.svg" class="" alt="" width="12" /><span> Curtir</span></button></li>
-                          <li><button class="btncc" type="button" name="button"><img src="img/comment.svg" class="" alt="" width="11" /> Comentar</button></li>
-                          <li><button class="btncc" type="button" name="button"><img src="img/reply.svg" class="" alt="" width="12" /> Compartilhar</button></li>
+                          <li>
+                            <button class="btnc" type="button" name="button"><img src="img/like.svg" class="btna" alt="" />Curtir</button>
+                          </li>
+                          <li>
+                            <button class="btnc" type="button" name="button"><img src="img/feed.svg" class="btna" alt="" />Seguir</button>
+                          </li>
+                          <li>
+                            <button class="btnc" type="button" name="button"><img src="img/reply.svg" class="btna" alt="" />Compartilhar</button>
+                          </li>
+                          <li>
+                            <button class="btnc" type="button" name="button"><img src="img/more.svg" class="btna" alt="" />Mais</button>
+                          </li>
                         </ul>
                       </div>
                     </div>
-                    <div class="post-comenta rel">
-                      <div class="comenta-foto">
-
+                    <div class="item">
+                      <div class="buttonsr">
+                        <ul>
+                          <li>
+                            <button class="cad" type="button" name="button">Cadastre-se</button>
+                          </li>
+                          <li>
+                            <button class="btnc" type="button" name="button"><img src="img/messenger.svg" class="btna" alt="" />Enviar Mensagem</button>
+                          </li>
+                        </ul>
                       </div>
-                      <div class="comenta-inp">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-b destaque">
+                <div class="item2">
+                  <div class="post estilo">
+                    <div class="fix">
+                      <div class="destaquer">
+                        <h1>Em destaque para você</h1>
+                        <div class="rel">
+                          <div class="next">
+                            <div class="nex">
+                              <img src="img/right.svg" width="20px" alt="" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="dest">
+                          <div class="desta">
+                            <div class="fix">
+                              Overleasy facebook <a href="#">Confira</a>
+                              <div class="close">
+                                <img src="img/close.svg" class="btnc" alt="" />
+                              </div>
+                            </div>
+                            <div class="destaque-img">
+                            </div>
+                            <div class="fix">
+                              <div class="resp">
+                                Taxa de resposta de 95%
+                                <br>
+                                <span>Normalmente responde instantaneamente</span>
+                                <div class="right">
+                                  <button type="button" name="button">Mensagem</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="desta2">
+                            <div class="fix">
+                              <div class="el">
+                                Overleasy
+                              </div>
+                            </div>
+                            <div class="destaque-img">
+                            </div>
+                            <div class="fix">
+                              <div class="resp">
+                                <div class="fix">
+                                  Teey!
+                                  <br>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post estilo">
+                    <div class="fix">
+                      <div class="post-topo">
+                        <div class="post-foto">
+                          <img id="blah" class="post-foto" src="" alt=" " />
+                        </div>
+                        <div class="post-info rel">
+                          <span class="post-titulo">Overleasy</span>
+                          <span class="time">1 de julho de 2016 . <img src="img/world.svg" width="11" alt="" /></span>
+                          <div class="post-v"><img src="img/down.svg" class="down" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="post-p">
+                      </div>
+                      <div class="post-buttons">
+                        <div class="buttons">
+                          <ul>
+                            <li>
+                              <button class="btncc" type="button" name="button"><img src="img/like.svg" class="" alt="" width="12" /><span> Curtir</span>
+                              </button>
+                            </li>
+                            <li>
+                              <button class="btncc" type="button" name="button"><img src="img/comment.svg" class="" alt="" width="11" /> Comentar</button>
+                            </li>
+                            <li>
+                              <button class="btncc" type="button" name="button"><img src="img/reply.svg" class="" alt="" width="12" /> Compartilhar</button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="post-comenta rel">
+                        <div class="comenta-foto">
+                          <img id="blahfgh" class="comenta-foto" src="" alt=" " />
+                        </div>
+                        <div class="comenta-inp">
                           <input type="text" class="comen" placeholder="Escreva um comentario..." name="name" value="">
                           <div class="btc">
                             <img src="img/photo.svg" width="15" alt="" /> <img src="img/smile.svg" width="15" alt="" />
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="iteme">
+                  <div class="itemdd idd">
+                    <div class="fix">
+                      <div class="pesquisa">
+                        <div class="icon-pesquisa">
+                          <img src="img/search.svg" class="btnc" width="13" alt="" />
+                        </div>
+                        <div class="input-pesquisa">
+                          <input type="text" name="name" class="inpt" placeholder="Procurar publicacoes nessa pagina" value="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemdd idd">
+                    <div class="fix">
+                      <div class="pesquisa">
+                        <div class="icon-pesquisa">
+                          <img src="img/add.svg" class="btnc" width="20" alt="" />
+                        </div>
+                        <div class="input-pesquisa">
+                          <span class="conv">Convidar amigos para curtir esta Página</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemdd idd ">
+                    <div class="fix">
+                      <div class="curtiram-titulo">
+                        Overleasy
+                      </div>
+                      <div class="curtiram">
+                        <div class="icon-foto">
+                          <div class="foto-perfil-p">
+                            <img id="blahfg" class="foto-perfil-p" src="" alt=" " />
+                          </div>
+                        </div>
+                        <div class="curtiramd curt">
+                          <span class="likes">100 curtidas</span>
+                          <br>
+                          <a href="#">Gustavo Quinalha</a> e outros 99 amigos curtiram isso
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemdd idd">
+                    <div class="fix">
+                      <div class="sobre">
+                        <h2>Sobre</h2>
+                        <div class="maiss">
+                          Ver tudo
+                        </div>
+                      </div>
+                      <div class="pesquisa ah">
+                        <div class="icon-pesquisa">
+                          <img src="img/messenger.svg" class="btnc" width="15" alt="" />
+                        </div>
+                        <div class="input-pesquisa">
+                          <span class="conv">Normalmente responde dentro de algumas horas</span>
+                        </div>
+                      </div>
+                      <div class="pesquisa ah">
+                        <div class="icon-pesquisa">
+                          <img src="img/world.svg" class="btnc" width="15" alt="" />
+                        </div>
+                        <div class="input-pesquisa">
+                          <span class="conv"><a href="#">gustavoquinalha.com</a></span>
+                        </div>
+                      </div>
+                      <div class="pesquisa ah">
+                        <div class="icon-pesquisa">
+                          <img src="img/more.svg" class="btnc" width="15" alt="" />
+                        </div>
+                        <div class="input-pesquisa">
+                          <span class="conv">Ferramenta</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemdd">
+                    <div class="title">
+                      <div class="fix">
+                        FOTOS
+                        <div class="fp">
+                          <img src="img/right.svg" width="13" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fix">
+                      <div class="pics">
+                        <div class="pic">
+                          <div class="picc">
+                            <img id="blahfghijkf" class="picc" src="" alt=" " />
+                          </div>
+                        </div>
+                        <div class="pic">
+                          <div class="picc">
+                          </div>
+                        </div>
+                        <div class="pic">
+                          <div class="picc">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pics">
+                        <div class="pic">
+                          <div class="picc">
+                          </div>
+                        </div>
+                        <div class="pic">
+                          <div class="picc">
+                          </div>
+                        </div>
+                        <div class="pic">
+                          <div class="picc">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="pics">
+                        <div class="pic">
+                          <div class="picc">
+                          </div>
+                        </div>
+                        <div class="pic">
+                          <div class="picc">
+                          </div>
+                        </div>
+                        <div class="pic">
+                          <div class="picc">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemdd">
+                    <div class="title">
+                      <div class="fix">
+                        VÍDEOS
+                        <div class="fp">
+                          <img src="img/right.svg" width="13" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fix">
+                      <div class="pics">
+                        <div class="vidp">
+                        </div>
+                      </div>
+                      <div class="pics">
+                        <div class="vid">
+                        </div>
+                        <div class="vid">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemdd">
+                    <div class="title">
+                      <div class="fix">
+                        PUBLICAÇÕES DE VISITANTES
+                        <div class="fp">
+                          <img src="img/right.svg" width="13" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fix">
+                      <div class="visi">
+                        <div class="fix">
+                          <div class="post-topo">
+                            <div class="post-foto">
+                              <img id="blahfghij" class="post-foto" src="" alt=" " />
+                            </div>
+                            <div class="post-info rel">
+                              <span class="post-titulo">Overleasy</span>
+                              <span class="time">1 de julho de 2016 as 16:20 <img src="img/world.svg" class="" alt="" width="11"/></span>
+                            </div>
+                          </div>
+                          <div class="vis">
+                            <p>
+                              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span> <a href="#">Ver mais</a>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="btts">
+                          <a href="#">Curtir</a> <a href="#">Comentar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="itemdd">
+                    <div class="title">
+                      <div class="fix">
+                        PESSOAS TAMBEM CURTIRAM
+                        <div class="fp">
+                          <img src="img/right.svg" width="13" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="fix rel esp">
+                      <div class="pc">
+                        <div class="pcc">
+                          <img id="blahfghijkl" class="pcc" src="" alt=" " />
+                        </div>
+                        <div class="aa">
+                          <h2>Overleasy</h2>
+                          <span>Ferramenta</span>
+                        </div>
+                      </div>
+                      <div class="pccc">
+                        <button class="btnc" type="button" name="button"><img src="img/like2.svg" class="btna" alt="" /><span>Curtir</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="fix rel esp">
+                      <div class="pc">
+                        <div class="pcc">
+                        </div>
+                        <div class="aa">
+                          <h2>Overleasy</h2>
+                          <span>Ferramenta</span>
+                        </div>
+                      </div>
+                      <div class="pccc">
+                        <button class="btnc" type="button" name="button"><img src="img/like2.svg" class="btna" alt="" /><span>Curtir</span>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="fix rel espp">
+                      <div class="pc">
+                        <div class="pcc">
+                        </div>
+                        <div class="aa">
+                          <h2>Overleasy</h2>
+                          <span>Ferramenta</span>
+                        </div>
+                      </div>
+                      <div class="pccc">
+                        <button class="btnc" type="button" name="button"><img src="img/like2.svg" class="btna" alt="" /><span>Curtir</span>
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="iteme">
-                <div class="itemdd idd">
-                  <div class="fix">
-                    <div class="pesquisa">
-                      <div class="icon-pesquisa">
-                        <img src="img/search.svg" class="btnc" width="13"alt="" />
-                      </div>
-                      <div class="input-pesquisa">
-                        <input type="text" name="name" class="inpt" placeholder="Procurar publicacoes nessa pagina" value="">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="itemdd idd">
-                  <div class="fix">
-                    <div class="pesquisa">
-                      <div class="icon-pesquisa">
-                        <img src="img/add.svg" class="btnc" width="20"alt="" />
-                      </div>
-                      <div class="input-pesquisa">
-                        <span class="conv">Convidar amigos para curtir esta Página</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="itemdd idd ">
-                <div class="fix">
-                  <div class="curtiram-titulo">
-                    Overleasy
-                  </div>
-                  <div class="curtiram">
-                    <div class="icon-foto">
-                      <div class="foto-perfil-p">
-                      </div>
-                    </div>
-                    <div class="curtiramd curt">
-                      <span class="likes">100 curtidas</span><br>
-                      <a href="#">Gustavo Quinalha</a> e outros 99 amigos curtiram isso
-                  </div>
-                </div>
-              </div>
             </div>
 
-            <div class="itemdd idd">
-              <div class="fix">
-                <div class="sobre">
-                  <h2>Sobre</h2>
-                  <div class="maiss">
-                    Ver tudo
-                  </div>
-                </div>
-                <div class="pesquisa ah">
-                  <div class="icon-pesquisa">
-                    <img src="img/messenger.svg" class="btnc" width="15"alt="" />
-                  </div>
-                  <div class="input-pesquisa">
-                    <span class="conv">Normalmente responde dentro de algumas horas</span>
-                </div>
-              </div>
-              <div class="pesquisa ah">
-                <div class="icon-pesquisa">
-                  <img src="img/world.svg" class="btnc" width="15"alt="" />
-                </div>
-                <div class="input-pesquisa">
-                  <span class="conv"><a href="#">gustavoquinalha.com</a></span>
-              </div>
-            </div>
-            <div class="pesquisa ah">
-              <div class="icon-pesquisa">
-                <img src="img/more.svg" class="btnc" width="15"alt="" />
-              </div>
-              <div class="input-pesquisa">
-                <span class="conv">Ferramenta</span>
-            </div>
           </div>
-            </div>
-          </div>
+          <div class="xat">
+            <div class="xxat">
+              <div class="xat-teste">
 
-          <div class="itemdd">
-            <div class="title">
-              <div class="fix">
-                FOTOS
-                <div class="fp">
-                  <img src="img/right.svg" width="13" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="fix">
-              <div class="pics">
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="pics">
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-
-              </div>
-              <div class="pics">
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-                <div class="pic">
-                  <div class="picc">
-
-                  </div>
-                </div>
-
-              </div>
-          </div>
-        </div>
-
-        <div class="itemdd">
-          <div class="title">
-            <div class="fix">
-              VÍDEOS
-              <div class="fp">
-                <img src="img/right.svg" width="13" alt="" />
               </div>
             </div>
           </div>
-          <div class="fix">
-            <div class="pics">
-              <div class="vidp">
-              </div>
-            </div>
-            <div class="pics">
-              <div class="vid">
-              </div>
-              <div class="vid">
-              </div>
-            </div>
         </div>
       </div>
-
-      <div class="itemdd">
-        <div class="title">
-          <div class="fix">
-            PUBLICAÇÕES DE VISITANTES
-            <div class="fp">
-              <img src="img/right.svg" width="13" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="fix">
-          <div class="visi">
-            <div class="fix">
-              <div class="post-topo">
-                <div class="post-foto">
-                </div>
-                <div class="post-info rel">
-                  <span class="post-titulo">Overleasy</span>
-                  <span class="time">1 de julho de 2016 as 16:20 <img src="img/world.svg" class="" alt="" width="11"/></span>
-                </div>
-              </div>
-              <div class="vis">
-                <p>
-                  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</span> <a href="#">Ver mais</a>
-                </p>
-              </div>
-            </div>
-            <div class="btts">
-              <a href="#">Curtir</a> <a href="#">Comentar</a>
-            </div>
-          </div>
-      </div>
+    </form>
+    <div class="rodape">
+      <p>
+        Create by @gustavoquinalha
+      </p>
     </div>
-
-    <div class="itemdd">
-      <div class="title">
-        <div class="fix">
-          PESSOAS TAMBEM CURTIRAM
-          <div class="fp">
-            <img src="img/right.svg" width="13" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="fix rel esp">
-        <div class="pc">
-          <div class="pcc">
-
-          </div>
-          <div class="aa">
-            <h2>Overleasy</h2>
-            <span>Ferramenta</span>
-          </div>
-
-        </div>
-        <div class="pccc">
-          <button class="btnc" type="button" name="button"><img src="img/like2.svg" class="btna" alt="" /><span>Curtir</span></button>
-        </div>
-    </div>
-
-    <div class="fix rel esp">
-      <div class="pc">
-        <div class="pcc">
-
-        </div>
-        <div class="aa">
-          <h2>Overleasy</h2>
-          <span>Ferramenta</span>
-        </div>
-
-      </div>
-      <div class="pccc">
-        <button class="btnc" type="button" name="button"><img src="img/like2.svg" class="btna" alt="" /><span>Curtir</span></button>
-      </div>
   </div>
+  <script type="text/javascript">
+    $(function() {
+      $("#btnSave").click(function() {
+        html2canvas($("#widget"), {
+          onrendered: function(canvas) {
+            theCanvas = canvas;
+            document.body.appendChild(canvas);
 
-  <div class="fix rel espp">
-    <div class="pc">
-      <div class="pcc">
+            // Convert and download as image
+            Canvas2Image.saveAsPNG(canvas);
+            $("#img-out").append(canvas);
+            // Clean up
+            document.body.removeChild(canvas);
+          }
+        });
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    function readURL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
 
-      </div>
-      <div class="aa">
-        <h2>Overleasy</h2>
-        <span>Ferramenta</span>
-      </div>
+        reader.onload = function(e) {
+          $('#blah').attr('src', e.target.result);
+          $('#blahf').attr('src', e.target.result);
+          $('#blahfg').attr('src', e.target.result);
+          $('#blahfgh').attr('src', e.target.result);
+          $('#blahfghi').attr('src', e.target.result);
+          $('#blahfghij').attr('src', e.target.result);
+          $('#blahfghijk').attr('src', e.target.result);
+          $('#blahfghijkl').attr('src', e.target.result);
+          $('#blahfghijkf').attr('src', e.target.result);
+        }
 
-    </div>
-    <div class="pccc">
-      <button class="btnc" type="button" name="button"><img src="img/like2.svg" class="btna" alt="" /><span>Curtir</span></button>
-    </div>
-</div>
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
 
+    $("#imgInp").change(function() {
+      readURL(this);
+    });
+  </script>
+  <script type="text/javascript">
+    function readURLL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
 
-  </div>
+        reader.onload = function(e) {
+          $('#capah').attr('src', e.target.result);
+        }
 
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
 
+    $("#imgInpp").change(function() {
+      readURLL(this);
+    });
+  </script>
+</body>
 
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div></div>
-      <div class="rodape">
-        <p>
-          Create by @gustavoquinalha
-        </p>
-      </div>
-  </body>
 </html>
