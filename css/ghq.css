@@ -465,7 +465,6 @@ a {
 }
 .pic {
     flex-grow: 1;
-    width: 33.33%;
     border: 1px solid #fff;
 }
 .pc {
@@ -532,7 +531,7 @@ a {
     height: 100px;
 }
 .picc {
-    width:33.33%;
+    width:88px;
     margin: 0 auto;
     height: 88px;
     background: #3D6AD6;
