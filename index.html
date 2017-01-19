@@ -95,8 +95,8 @@
                       </form>
                     </div>
                     <div class="dados-pagina">
-                      <h1>Overleasy</h1>
-                      <h2>@Overleasy</h2>
+                      <input type="text" name="nameedit" value="Overleasy" class="edit um">
+                      <input type="text" name="nameedit" value="@Clique para editar" class="edit">
                       <ul class="menu ">
                         <li><span>Página Inicial</span>
                         </li>
@@ -257,19 +257,23 @@
                           <img id="blah" class="post-foto" src="" alt=" " />
                         </div>
                         <div class="post-info rel">
-                          <span class="post-titulo">Overleasy</span>
+                          <span class="post-titulo"><input type="text" name="nameedit" value="Overleasy" class="edit 16 bold cazul"></span>
                           <span class="time">1 de julho de 2016 . <img src="img/world.svg" width="11" alt="" /></span>
                           <div class="post-v"><img src="img/down.svg" class="down" alt="" />
                           </div>
                         </div>
                       </div>
+                      <div class="coment-post1">
+                        <textarea name="name" class="edit ga">Clique para editar seu texto</textarea>
+                      </div>
                       <div class="post-p">
+
                       </div>
                       <div class="post-buttons">
                         <div class="buttons">
                           <ul>
                             <li>
-                              <button class="btncc" type="button" name="button"><img src="img/like.svg" class="" alt="" width="12" /><span> Curtir</span>
+                              <button class="btncc" type="button" name="button"><img src="img/like.svg" class="" alt="" width="12" /><span> Curtiu</span>
                               </button>
                             </li>
                             <li>
@@ -572,7 +576,10 @@
             Canvas2Image.saveAsPNG(canvas);
             $("#img-out").append(canvas);
             // Clean up
-            document.body.removeChild(canvas);
+            //var data = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+            //window.location.href = data;
+            window.location = canvas.toDataURL('image/png', '_blank');
+            //document.body.removeChild(canvas);
           }
         });
       });
