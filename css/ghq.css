@@ -890,6 +890,9 @@ img {
 .oaaa {
   display: block
 }
+.hk {
+  padding-top: 5px;
+}
 @media only screen and (max-width: 983px) {
     .fl {
         display: none
@@ -935,6 +938,9 @@ img {
   .content-l {
     width: 100%;
     margin: 0 auto
+  }
+  .fdg {
+    display: none
   }
 
 }
