@@ -281,7 +281,17 @@
                         <textarea name="name" class="edit ga">Clique para editar seu texto</textarea>
                       </div>
                       <div class="post-p">
+                        <form id="form3" runat="server">
+                          <div class="rel">
+                            <div class="inpuu">
+                              <input type="file" id="imgInppp" name="imgInppp" class="aaa" />
+                              <label for="imgInppp"><img src="img/photo-camera.svg" width="15" class="pho" alt="" />
+                              </label>
 
+                            </div>
+                            <img id="postpp" class="post-p" src="" alt=" " />
+                          </div>
+                        </form>
                       </div>
                       <div class="post-buttons">
                         <div class="buttons">
@@ -409,10 +419,12 @@
                         </div>
                         <div class="pic">
                           <div class="picc">
+                            <img id="capahh" class="picc" src="" alt=" " />
                           </div>
                         </div>
                         <div class="pic">
                           <div class="picc">
+                            <img id="postp" class="picc" src="" alt=" " />
                           </div>
                         </div>
                       </div>
@@ -639,6 +651,7 @@
 
         reader.onload = function(e) {
           $('#capah').attr('src', e.target.result);
+          $('#capahh').attr('src', e.target.result);
         }
 
         reader.readAsDataURL(input.files[0]);
@@ -647,6 +660,24 @@
 
     $("#imgInpp").change(function() {
       readURLL(this);
+    });
+  </script>
+  <script type="text/javascript">
+    function readURLLL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          $('#postp').attr('src', e.target.result);
+          $('#postpp').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $("#imgInppp").change(function() {
+      readURLLL(this);
     });
   </script>
 </body>
