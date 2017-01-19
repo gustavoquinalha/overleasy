@@ -31,6 +31,19 @@
 </head>
 
 <body>
+  <div class="relaviso" id="relaviso">
+    <div class="fixaviso avi">
+      <div class="ll">
+        <div class="fix">
+          Novas atualizaçõessss! Agora você pode editar os textos e salvar seu overleasy, experimente!
+        </div>
+      </div>
+      <div class="lr">
+        <button type="button" name="fecha" class="alertf" id="fecha"><img src="img/close-alert.svg" width="20" alt="" /></button>
+
+      </div>
+    </div>
+  </div>
   <div class="widget" id="widget">
     <div class="rela">
       <div class="top fixed">
@@ -40,7 +53,9 @@
           </div>
           <div class="pesquisao">
             <div class="po">
-              <input type="text" name="name" value="" placeholder="Procure pessoas, coisas e locais">
+              <div class="ppe">
+                <input type="text" name="name" value="" placeholder="Procure pessoas, coisas e locais">
+              </div>
               <div class="pes rel">
                 <img src="img/search.svg" width="15" alt="" class="pad"/>
               </div>
@@ -112,8 +127,7 @@
                   <div class="btnn">
 
                     <button type="button" id="btnSave" name="button" class="criar">SALVAR OVERLEASY</button>
-                    <span class="oaaa">Depois de adicionar todas as imagens clique aqui e salve em PNG.</span>
-                  </div>
+                    </div>
                 </div>
 
             </div>
@@ -558,12 +572,18 @@
     </form>
     <div class="rodape">
 
-      <img src="img/ov.svg" alt="Overleasy"  width="200" />
+      <img src="img/ov.svg" alt="Overleasy"  width="100" />
       <p>
         Create by <a href="https://gustavoquinalha.github.io/">Gustavo Quinalha</a>
       </p>
     </div>
   </div>
+  <script type="text/javascript">
+  $("#fecha").click(function(){
+    $("#relaviso").toggle();
+
+  });
+  </script>
   <script type="text/javascript">
     $(function() {
       $("#btnSave").click(function() {
