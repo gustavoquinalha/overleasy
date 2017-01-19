@@ -225,7 +225,7 @@ input:focus {
 }
 .curtiram-titulo {
     padding-bottom: 10px;
-    border-bottom: 1px solid #b5b9bf
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 .inpt {
     width: 100%;
@@ -349,6 +349,7 @@ input:focus {
   height: 40px;
   position: relative;
 }
+
 .fixaviso {
   width: 100%;
   position: fixed;
