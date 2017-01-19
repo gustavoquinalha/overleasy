@@ -188,7 +188,7 @@
                             <button class="btnc" type="button" name="button"><img src="img/reply.svg" class="btna" alt="" />Compartilhar</button>
                           </li>
                           <li>
-                            <button class="btnc" type="button" name="button"><img src="img/more.svg" class="btna oaaa" alt="" />Mais</button>
+                            <button class="btnc oaaa" type="button" name="button"><img src="img/more.svg" class="btna" alt="" />Mais</button>
                           </li>
                         </ul>
                       </div>
@@ -231,6 +231,16 @@
                               </div>
                             </div>
                             <div class="destaque-img">
+                              <form id="form4" runat="server">
+                                <div class="rel">
+                                  <div class="inpuu">
+                                    <input type="file" id="dstaqgg" name="dstaqgg" class="aaa" />
+                                    <label for="dstaqgg"><img src="img/photo-camera.svg" width="15" class="pho" alt="" />
+                                    </label>
+                                  </div>
+                                  <img id="destt" class="destaque-imgg borda" src="" alt=" " />
+                                </div>
+                              </form>
                             </div>
                             <div class="fix">
                               <div class="resp">
@@ -268,7 +278,7 @@
                     <div class="fix">
                       <div class="post-topo">
                         <div class="post-foto">
-                          <img id="blah" class="post-foto" src="" alt=" " />
+                          <img id="blah" class="post-foto borda" src="" alt=" " />
                         </div>
                         <div class="post-info rel">
                           <span class="post-titulo"><input type="text" name="nameedit" value="Overleasy" class="edit 16 bold cazul"></span>
@@ -311,7 +321,7 @@
                       </div>
                       <div class="post-comenta rel">
                         <div class="comenta-foto">
-                          <img id="blahfgh" class="comenta-foto" src="" alt=" " />
+                          <img id="blahfgh" class="comenta-foto borda" src="" alt=" " />
                         </div>
                         <div class="comenta-inp">
                           <input type="text" class="comen" placeholder="Escreva um comentario..." name="name" value="">
@@ -356,7 +366,7 @@
                       <div class="curtiram">
                         <div class="icon-foto">
                           <div class="foto-perfil-p">
-                            <img id="blahfg" class="foto-perfil-p" src="" alt=" " />
+                            <img id="blahfg" class="foto-perfil-p borda" src="" alt=" " />
                           </div>
                         </div>
                         <div class="curtiramd curt">
@@ -431,28 +441,34 @@
                       <div class="pics">
                         <div class="pic">
                           <div class="picc">
+                            <img id="postppp" class="picc" src="" alt=" " />
                           </div>
                         </div>
                         <div class="pic">
                           <div class="picc">
+                            <img id="blakjs" class="picc" src="" alt=" " />
                           </div>
                         </div>
                         <div class="pic">
                           <div class="picc">
+                            <img id="capahhh" class="picc" src="" alt=" " />
                           </div>
                         </div>
                       </div>
                       <div class="pics">
                         <div class="pic">
                           <div class="picc">
+                            <img id="capahhhh" class="picc" src="" alt=" " />
                           </div>
                         </div>
                         <div class="pic">
                           <div class="picc">
+                            <img id="postpppp" class="picc" src="" alt=" " />
                           </div>
                         </div>
                         <div class="pic">
                           <div class="picc">
+                            <img id="blakjss" class="picc" src="" alt=" " />
                           </div>
                         </div>
                       </div>
@@ -494,7 +510,7 @@
                         <div class="fix">
                           <div class="post-topo">
                             <div class="post-foto">
-                              <img id="blahfghij" class="post-foto" src="" alt=" " />
+                              <img id="blahfghij" class="post-foto borda" src="" alt=" " />
                             </div>
                             <div class="post-info rel">
                               <span class="post-titulo">Overleasy</span>
@@ -525,7 +541,7 @@
                     <div class="fix rel esp">
                       <div class="pc">
                         <div class="pcc">
-                          <img id="blahfghijkl" class="pcc" src="" alt=" " />
+                          <img id="blahfghijkl" class="pcca" src="" alt=" " />
                         </div>
                         <div class="aa">
                           <h2>Overleasy</h2>
@@ -540,6 +556,7 @@
                     <div class="fix rel esp">
                       <div class="pc">
                         <div class="pcc">
+                          <img id="tbml" class="pcca" src="" alt=" " />
                         </div>
                         <div class="aa">
                           <h2>Overleasy</h2>
@@ -554,6 +571,7 @@
                     <div class="fix rel espp">
                       <div class="pc">
                         <div class="pcc">
+                          <img id="tbmll" class="pcca" src="" alt=" " />
                         </div>
                         <div class="aa">
                           <h2>Overleasy</h2>
@@ -633,6 +651,10 @@
           $('#blahfghijkl').attr('src', e.target.result);
           $('#blahfghijkf').attr('src', e.target.result);
           $('#fpdo').attr('src', e.target.result);
+          $('#tbml').attr('src', e.target.result);
+          $('#tbmll').attr('src', e.target.result);
+          $('#blakjs').attr('src', e.target.result);
+          $('#blakjss').attr('src', e.target.result);
 
         }
 
@@ -652,6 +674,8 @@
         reader.onload = function(e) {
           $('#capah').attr('src', e.target.result);
           $('#capahh').attr('src', e.target.result);
+          $('#capahhh').attr('src', e.target.result);
+          $('#capahhhh').attr('src', e.target.result);
         }
 
         reader.readAsDataURL(input.files[0]);
@@ -670,6 +694,8 @@
         reader.onload = function(e) {
           $('#postp').attr('src', e.target.result);
           $('#postpp').attr('src', e.target.result);
+          $('#postppp').attr('src', e.target.result);
+          $('#postpppp').attr('src', e.target.result);
         }
 
         reader.readAsDataURL(input.files[0]);
@@ -678,6 +704,24 @@
 
     $("#imgInppp").change(function() {
       readURLLL(this);
+    });
+  </script>
+
+  <script type="text/javascript">
+    function readURLLLL(input) {
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+          $('#destt').attr('src', e.target.result);
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $("#dstaqgg").change(function() {
+      readURLLLL(this);
     });
   </script>
 </body>

@@ -596,6 +596,15 @@ a {
     height: 50px;
     background: #3D6AD6;
 }
+.borda {
+  border:1px solid #ccc;
+}
+.pcca {
+    width: 49px;
+    height: 49px;
+    background: #3D6AD6;
+    border:1px solid #ccc;
+}
 .pccc {
     padding-top: 10px;
     float: right;
@@ -661,6 +670,11 @@ a {
     background: #3D6AD6;
     height: 220px;
     margin-top: 10px;
+}
+.destaque-imgg {
+    background: #3D6AD6;
+    height: 220px;
+    width: 100%;
 }
 .resp {
     margin-top: 10px;
