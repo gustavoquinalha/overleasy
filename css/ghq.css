@@ -412,6 +412,7 @@ input:focus {
     width: 100%;
     background: #3d6ad6;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .thumb-image {
