@@ -961,7 +961,7 @@ img {
 @media only screen and (max-width: 500px) {
   .thumb-image {
     width: 100%;
-    height: 315px;
+    height: 255px;
   }
   .respp {
     display: block
@@ -999,7 +999,7 @@ img {
     min-width: 100%;
   }
   .capa {
-      height: 315px;
+      height: 255px;
       width: 100%;
   }
 
