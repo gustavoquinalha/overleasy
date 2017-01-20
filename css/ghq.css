@@ -20,6 +20,15 @@ body {
   max-width: 100%;
   overflow: hidden
 }
+.ii {
+  width: 828px;
+  max-width: 100%;
+  height: auto;
+}
+.cropcapa {
+  clip: rect(0px, 828px, 315px, 0px);
+  position: absolute;
+}
 .um {
   font-weight: 900;
   font-size: 22px;
@@ -301,7 +310,7 @@ input:focus {
     margin: 0 auto;
 }
 .content-right {
-    width: 815px;
+    width: 828px;
     max-width: 100%;
     float: left;
 }
@@ -389,7 +398,7 @@ input:focus {
     width: 100%;
 }
 .capa {
-    height: 312px;
+    height: 315px;
     width: 100%;
     background: #3d6ad6;
 }
@@ -957,6 +966,20 @@ img {
   }
   .fdg {
     display: none
+  }
+
+  .ii {
+    width: 100%;
+    height: 475px;
+  }
+  .cropcapa {
+    clip: none;
+    position:inherit;
+    min-width: 100%;
+  }
+  .capa {
+      height: 475px;
+      width: 100%;
   }
 
 }
