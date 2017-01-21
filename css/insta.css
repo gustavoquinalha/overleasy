@@ -63,11 +63,12 @@ input:focus {
   margin: 0 auto;
   height: 300px;
   width: 300px;
-  background: #de6161; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #de6161 , #2657eb);
+  background: #de6161;
+  background-color: #de6161;
 }
 .test {
   flex-grow: 1;
@@ -150,11 +151,12 @@ footer {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: #de6161; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #de6161 , #2657eb);
+  background: #de6161;
+  background-color: #de6161;
   margin: 0 auto;
 }
 .profile-flex {
@@ -237,6 +239,35 @@ footer {
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
+}
+.rel {
+  position: relative;
+}
+.s {
+  height: 70px;
+}
+.criar {
+    /*background: #36a420;*/
+    background: linear-gradient(to left, #de6161 , #2657eb);
+    border: none;
+    color: #fff;
+    height: 40px;
+    font-weight: 900;
+    width: 500px;
+    max-width: 90%;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    /*animation: cria 1s linear 0s infinite alternate;*/
+}
+.salvar {
+  z-index: 99;
+  position: fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) , #FFFFFF);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+
 }
 .relaviso {
   width: 100%;
