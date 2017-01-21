@@ -244,7 +244,7 @@ footer {
   position: relative;
 }
 .s {
-  height: 70px;
+  height: 100px;
 }
 .criar {
     /*background: #36a420;*/
@@ -255,7 +255,7 @@ footer {
     font-weight: 900;
     width: 500px;
     max-width: 90%;
-    margin-top: 20px;
+    margin-top: 45px;
     border-radius: 4px;
     cursor: pointer;
     /*animation: cria 1s linear 0s infinite alternate;*/
@@ -267,7 +267,6 @@ footer {
   bottom: 0;
   width: 100%;
   text-align: center;
-
 }
 .relaviso {
   width: 100%;
