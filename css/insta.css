@@ -390,7 +390,8 @@ button:hover {
     color: #fff;
     height: 40px;
     font-weight: 900;
-    width: 150px;
+    width: 200px;
+    max-width: 90%;
     border-radius: 4px;
     cursor: pointer;
     margin-right: 10px;
