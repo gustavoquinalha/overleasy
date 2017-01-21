@@ -10,20 +10,19 @@
     <script type="text/javascript" src="js/canvas2image.js"></script>
   </head>
   <body>
-    <!--<div class="relaviso" id="relaviso">
+    <div class="relaviso" id="relaviso">
       <div class="fixaviso avi">
         <div class="ll">
           <div class="fix">
-            Novas atualizaçõessss! Agora vocÊ tambem pode fazer o overlay do Instagram, olha que legal!!!
-            <button type="button" id="saveInsta" name="button" class="criar">SALVAR OVERLEASY</button>
-          </div>
+              Ainda estamos em contrução, desculpe nos pelo transtorno :(
+            </div>
         </div>
         <div class="lr">
           <button type="button" name="fecha" class="alertf" id="fecha"><img src="img/close-alert.svg" width="20" alt="" /></button>
 
         </div>
       </div>
-      </div>-->
+      </div>
     <div class="rel">
       <div class="salvar s">
         <button type="button" id="saveInsta" name="button" class="criar">SALVAR OVERLEASY</button>
@@ -48,10 +47,13 @@
       <div class="conteudo-insta">
         <div class="profile">
           <div class="profile-flex">
-            <div class="foto-profile">
-              <div class="foto-borda">
+              <label for="fileUpload">
+                <div class="foto-profile">
+              <div class="foto-borda" id="image-up-post">
+
               </div>
             </div>
+          </label>
             <div class="texto-profile">
               <div class="p-titulo">
                 <div class="p1">
@@ -69,45 +71,48 @@
               </div>
               <div class="sobre">
                 <textarea name="name" rows="7"class="text-sobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+                    <input id="fileUpload" multiple="multiple" type="file" name="fileUpload" class="some"/>
+                    <input type="file" id="dstaqgg" name="dstaqgg" class="some" />
               </div>
             </div>
           </div>
         </div>
         <div class="tamanho flex">
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
+                <label for="dstaqgg"><img id="destt" class="foto-insta" src="" alt="Clique aqui para carregar uma imagem" />  </label>
             </div>
           </div>
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
             </div>
           </div>
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
             </div>
           </div>
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
             </div>
           </div>
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
             </div>
           </div>
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
             </div>
           </div>
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
             </div>
           </div>
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
             </div>
           </div>
           <div class="foto">
-            <div class="foto-insta">
+            <div class="foto-insta" >
             </div>
           </div>
         </div>
@@ -141,6 +146,60 @@
 
       });
     </script>
+
+    <script>
+    $(document).ready(function() {
+            $("#fileUpload").on('change', function() {
+              //Get count of selected files
+              var countFiles = $(this)[0].files.length;
+              var imgPath = $(this)[0].value;
+              var extn = imgPath.substring(imgPath.lastIndexOf('.') + 1).toLowerCase();
+              var image_holder = $("#image-up-post");
+              var image_holderr = $("#image-up-postt");
+              image_holder.empty();
+              if (extn == "gif" || extn == "png" || extn == "jpg" || extn == "jpeg") {
+                if (typeof(FileReader) != "undefined") {
+                  //loop for each file selected for uploaded.
+                  for (var i = 0; i < countFiles; i++)
+                  {
+                    var reader = new FileReader();
+                    reader.onload = function(e) {
+                      $("<img />", {
+                        "src": e.target.result,
+                        "class": "thumb-image"
+                      }).appendTo(image_holder);
+                    }
+                    image_holder.show();
+                    reader.readAsDataURL($(this)[0].files[i]);
+                  }
+                } else {
+                  alert("This browser does not support FileReader.");
+                }
+              } else {
+                alert("Arquivo invalido, use apenas imagens");
+              }
+            });
+          });
+    </script>
+
+    <script type="text/javascript">
+      function readURLLLL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+            $('#destt').attr('src', e.target.result);
+          }
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      $("#dstaqgg").change(function() {
+        readURLLLL(this);
+      });
+    </script>
+
     <script type="text/javascript">
       $(function() {
         $("#saveInsta").click(function() {

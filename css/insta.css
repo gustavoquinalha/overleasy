@@ -7,6 +7,11 @@ body,
 html {
     background: #FAFAFA
 }
+label {
+  margin: 0;
+  padding: 0;
+  flex-grow: 1
+}
 textarea:focus,
 input:focus {
     outline: none;
@@ -56,6 +61,7 @@ input:focus {
   height: 300px;
   padding-bottom: 20px;
   flex-basis: 300px;
+  cursor: pointer;
 }
 .foto-insta {
   max-width: 100%;
@@ -68,6 +74,16 @@ input:focus {
   background: linear-gradient(to left, #de6161 , #2657eb);
   background: #de6161;
   background-color: #de6161;
+  cursor: pointer;
+  overflow: hidden;
+}
+.thumb-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
 }
 .test {
   flex-grow: 1;
@@ -166,6 +182,7 @@ footer {
 }
 .foto-profile {
   flex-grow: 1;
+  cursor: pointer;
 }
 .texto-profile {
   flex-grow: 1
@@ -179,7 +196,9 @@ footer {
     display: inline-block;
     overflow: hidden;
 }
-
+.some {
+  display: none
+}
 .editar-perfil {
   border: 1px solid #ccc;
   color: #262626;
