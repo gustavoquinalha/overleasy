@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body,
+html {
+    background: #FAFAFA
+}
+.menu-insta {
+  width: 100%;
+  background: #fafafa;
+  border-bottom: 1px solid rgba(0,0,0,.0975);
+  margin-bottom: 20px;
+}
+.tamanho-menu {
+  height: 80px;
+}
+.tamanho {
+  width: 1000px;
+  /*max-width: calc(100% - 40px);*/
+  max-width: 90%;
+  margin: 0 auto;
+}
+.menu-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.logo {
+  text-align: left!important;
+}
+.logo img{
+  display: inline-block;
+  margin-right: 10px;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+.foto {
+  flex-grow: 1;
+  height: 300px;
+  padding-bottom: 20px;
+  flex-basis: 300px;
+}
+.foto-insta {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(to left, #de6161 , #2657eb);
+}
+.test {
+  flex-grow: 1;
+  max-width: 33.333%;
+  text-align: center
+}
+.logo img:first-child {
+  border-right:1px solid #262626;
+  padding-right: 10px;
+}
+.busca-input {
+  width: 215px;
+  max-width: 100%;
+  height: 25px;
+  border-radius: 4px;
+  background: transparent;
+  text-align: center;
+  border: 1px solid #dbdbdb;
+  margin: 0 auto;
+}
+.icones {
+  text-align: right!important
+}
+.icones img {
+  display: inline-block;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.conteudo-insta {
+
+}
+footer {
+  width: calc(1000px - 30px);
+  max-width: 90%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.rodape {
+  display: flex;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #003569;
+  font-weight: 900;
+}
+.rodape ul {
+  list-style: none;
+}
+.rodape ul li {
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.rodape-esquerdo {
+  flex-grow: 10;
+}
+.rodape-direito {
+  flex-grow: 1;
+  text-align: right;
+  color: #000!important;
+  opacity: 0.4
+}
+.botao {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.profile {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+.foto-borda {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(to left, #de6161 , #2657eb);
+  margin: 0 auto;
+}
+.profile-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.foto-profile {
+  flex-grow: 1;
+}
+.texto-profile {
+  flex-grow: 1
+}
+.nomepage {
+  background: transparent;
+  border:none;
+  font-size: 28px;
+}
+.p1 {
+    display: inline-block;
+    overflow: hidden;
+}
+
+.editar-perfil {
+  border: 1px solid #ccc;
+  color: #262626;
+  background: transparent;
+  height: 30px;
+  width: 120px;
+  font-weight: 900;
+  border-radius: 4px;
+}
+.ib {
+  display: inline-block;
+}
+.more {
+  margin-left: 20px;
+  padding-top: 5px;
+}
+.likes {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.likes span {
+  font-weight: 900
+}
+.likes ul {
+  list-style: none
+}
+.sobre {
+  width: 100%;
+
+}
+.text-sobre {
+  width: 100%;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.likes ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+.botao input {
+  background: #3897F0;
+  border-radius: 4px;
+  color: #fff;
+  height: 35px;
+  font-weight: 500;
+  font-size: 16px;
+  border: none;
+  margin: 0 auto;
+  width: 200px;
+  max-width: 90%;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
