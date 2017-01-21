@@ -238,6 +238,8 @@ img {
   width: 120px;
   font-weight: 900;
   border-radius: 4px;
+  opacity: 0.7;
+  cursor: pointer;
 }
 .ib {
   display: inline-block;
@@ -305,8 +307,79 @@ img {
 .rel {
   position: relative;
 }
+button {
+    background: #f6f7f9;
+    text-align: center;
+    border: 1px solid #ced0d4;
+    color: #4b4f56;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 25px;
+    font-weight: 900;
+    border-radius: 2px;
+    cursor: pointer;
+}
+button:hover {
+    background: #E9EBEE
+}
+.salvar {
+  z-index: 99;
+  position: fixed;
+  background: rgba(255, 255, 255, 0));
+  bottom: 0px;
+  width: 100%;
+  text-align: right;
+}
+.salvar ul {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+}
+.salvar ul li {
+  display: inline-block;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+.btn-face {
+  background: #2657EB;
+  /*background: linear-gradient(to left, #de6161 , #2657eb);*/
+  border: none;
+  color: #fff;
+  height: 30px;
+  font-weight: 900;
+  width: 100%;
+  margin-top: 10px;
+  border:1px solid #ccc;
+  transition: 1s;
+}
+.btn-insta {
+  background: linear-gradient(to right, #F9B163, #C73984 , #6451C6);
+  border: none;
+  color: #fff;
+  height: 30px;
+  font-weight: 900;
+  width: 100%;
+  margin-top: 10px;
+  border:1px solid #ccc;
+  transition: 1s;
+}
+.btn-face:hover,
+.btn-insta:hover {
+  background: #815CA6
+}
 .s {
   height: 50px;
+}
+.criarr {
+  background: #36a420;
+  /*background: linear-gradient(to left, #de6161 , #2657eb);*/
+  border: none;
+  color: #fff;
+  height: 30px;
+  font-weight: 900;
+  width: 100%;
+  margin-top: 10px;
 }
 .criar {
     background: #36a420;
@@ -317,25 +390,11 @@ img {
     font-weight: 900;
     width: 200px;
     max-width: 90%;
-    margin-top: 0px;
     border-radius: 4px;
     cursor: pointer;
     margin-right: 10px;
-      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
-      transition: 1s;
+    transition: 1s;
     /*animation: cria 1s linear 0s infinite alternate;*/
-}
-.criar:hover {
-  background: #3C8A2D!important
-}
-.salvar {
-  z-index: 99;
-  position: fixed;
-  background: rgba(255, 255, 255, 0));
-
-  bottom: 0;
-  width: 100%;
-  text-align: right;
 }
 .relaviso {
   width: 100%;
