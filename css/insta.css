@@ -247,8 +247,8 @@ footer {
   height: 100px;
 }
 .criar {
-    /*background: #36a420;*/
-    background: linear-gradient(to left, #de6161 , #2657eb);
+    background: #36a420;
+    /*background: linear-gradient(to left, #de6161 , #2657eb);*/
     border: none;
     color: #fff;
     height: 40px;
