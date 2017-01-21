@@ -51,7 +51,13 @@
     </div>
 
   </div>
+  <div class="rel" id="">
+    <div class="salvar s">
+      <button type="button" id="btnSave" name="button" class="criar"><img src="img/download.svg" width="10" alt="" /> SALVAR OVERLEASY</button>
+    </div>
+  </div>
   <div class="widget" id="widget">
+
     <div class="rela">
       <div class="top fixed">
         <div class="content-menu flex">
@@ -133,7 +139,7 @@
                   </div>
                   <div class="btnn">
 
-                    <button type="button" id="btnSave" name="button" class="criar">SALVAR OVERLEASY</button>
+                    <button type="button" name="button" class="criarr">Criar página</button>
                     </div>
                 </div>
 
@@ -643,6 +649,7 @@
   <script type="text/javascript">
     $(function() {
       $("#btnSave").click(function() {
+        $("#somc").toggleClass("main");
         html2canvas($("#widget"), {
           onrendered: function(canvas) {
             theCanvas = canvas;

@@ -276,15 +276,50 @@ input:focus {
     font-size: 14px;
     opacity: 0.9
 }
+.salvar {
+  z-index: 99;
+  position: fixed;
+  background: rgba(255, 255, 255, 0));
+
+  bottom: 0;
+  width: 100%;
+  text-align: right;
+}
+.s {
+  height: 50px;
+}
+.criarr {
+  background: #36a420;
+  /*background: linear-gradient(to left, #de6161 , #2657eb);*/
+  border: none;
+  color: #fff;
+  height: 30px;
+  font-weight: 900;
+  width: 100%;
+  margin-top: 10px;
+}
 .criar {
     background: #36a420;
+    /*background: linear-gradient(to left, #de6161 , #2657eb);*/
     border: none;
     color: #fff;
-    margin-top: 20px;
-    margin-bottom: 2px;
     height: 40px;
     font-weight: 900;
+    width: 200px;
+    max-width: 90%;
+    margin-top: 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+      box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+      transition: 1s;
     /*animation: cria 1s linear 0s infinite alternate;*/
+}
+.main {
+  display: none
+}
+.criar:hover {
+  background: #3C8A2D!important
 }
 @keyframes cria {
   0% {
@@ -299,10 +334,7 @@ input:focus {
   font-size: 12px;
   opacity: 0.7
 }
-.criar:hover,
-.criar:focus {
-  background: #31931d!important
-}
+
 .content-flex {
     width: 100%;
     margin: 0 auto;
