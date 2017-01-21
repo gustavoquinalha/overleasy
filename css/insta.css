@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial;
+    font-family: 'Roboto', sans-serif;
 }
 body,
 html {
@@ -72,17 +72,17 @@ input:focus {
   background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
   background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #de6161 , #2657eb);
-  background: #de6161;
-  background-color: #de6161;
+  background: #2657eb;
+  background-color: #2657eb;
   cursor: pointer;
   overflow: hidden;
+  z-index: 99;
+  transition: 1s
 }
 .thumb-image {
-  width: 150px;
-  height: 150px;
+  position: absolute;
+  clip-path: ellipse(60px 40px at 75px 30px);
   border-radius: 50%;
-  background-position: center;
-  background-size: cover;
   margin: 0 auto;
 }
 .test {
@@ -180,9 +180,31 @@ footer {
   justify-content: flex-start;
   align-items: center;
 }
+.ffooto {
+  width: 150px;
+  text-align: center;
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border:1px solid #ccc
+}
+img {
+ content: "";
+}
+.imginsta {
+  background: #2657eb;
+  border-radius: 50%;
+  border:none!important;
+  outline: none!important inherit;
+}
 .foto-profile {
   flex-grow: 1;
   cursor: pointer;
+  min-height: 150px;
+}
+.clip-ellipse {
+  clip-path: ellipse(60px 40px at 0px 0px);
+  /* OLD VALUE example: ellipse(245px, 80px, 75px, 30px); */
 }
 .texto-profile {
   flex-grow: 1
@@ -190,7 +212,10 @@ footer {
 .nomepage {
   background: transparent;
   border:none;
-  font-size: 28px;
+  font-size: 30px;
+  font-weight: 200px;
+  letter-spacing: 1px;
+  opacity: 0.7
 }
 .avvv {
   color: #fff!important;
@@ -224,6 +249,7 @@ footer {
 .likes {
   padding-top: 20px;
   padding-bottom: 20px;
+  opacity: 0.7
 }
 .likes span {
   font-weight: 900
@@ -233,19 +259,30 @@ footer {
 }
 .sobre {
   width: 100%;
-
+}
+.envia {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  opacity: 0.2
+}
+.foto-insta:hover {
+  background: #de6161
 }
 .text-sobre {
   width: 100%;
   background: transparent;
   border: none;
   font-size: 16px;
-  letter-spacing: 1px;
-  font-weight: 200
+  letter-spacing: 0.6px;
+  font-weight: 400;
+  opacity: 0.7
 }
 .likes ul li {
   display: inline-block;
   margin-right: 30px;
+  font-weight: 400
 }
 .botao input {
   background: #3897F0;
@@ -305,8 +342,10 @@ footer {
   height: 40px;
   z-index: 99;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
 }
 .avi {
+  font-family: 'Open Sans', sans-serif;
   background: #de6161; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */

@@ -61,7 +61,7 @@ body {
   font-weight: 900;
 }
 .cazul {
-  color: #3D6AD6
+  color: #2657eb
 }
 .edit {
   border:none;
@@ -141,7 +141,7 @@ input:focus {
     position: absolute;
     width: 25px;
     height: 25px;
-    background: #3D6AD6;
+    background: #2657eb;
     left: -10px;
 }
 .appl {
@@ -159,7 +159,7 @@ input:focus {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background: #3D6AD6;
+    background: #2657eb;
 }
 .iconss img {
     margin-right: 10px;
@@ -277,8 +277,7 @@ input:focus {
     opacity: 0.9
 }
 .criar {
-    /*background: #36a420;*/
-    background: linear-gradient(to left, #de6161 , #2657eb);
+    background: #36a420;
     border: none;
     color: #fff;
     margin-top: 20px;
@@ -292,7 +291,7 @@ input:focus {
     background:#36a420;
   }
   100% {
-    background:#3D6AD6;
+    background:#2657eb;
   }
 }
 
@@ -331,7 +330,7 @@ input:focus {
   height: 50px;
 }
 .foto-perfil {
-    background: #3d6ad6;
+    background: #2657eb;
     width: 170px;
     height: 170px;
     border: 3px solid #fff;
@@ -340,7 +339,7 @@ input:focus {
     display: inline-block;
 }
 .foto-perfil2 {
-    background: #3d6ad6;
+    background: #2657eb;
     width: 50px;
     height: 50px;
     border: 3px solid #fff;
@@ -348,7 +347,7 @@ input:focus {
     border-radius: 3px
 }
 .foto-perfil22 {
-    background: #3d6ad6;
+    background: #2657eb;
     width: 50px;
     height: 50px;
 }
@@ -410,7 +409,7 @@ input:focus {
 .capa {
     height: 315px;
     width: 100%;
-    background: #3d6ad6;
+    background: #2657eb;
     overflow: hidden;
     cursor: pointer;
 }
@@ -589,7 +588,7 @@ a {
     cursor: pointer;
 }
 .cad {
-    background: #3d6ad6!important;
+    background: #2657eb!important;
     color: #fff!important;
     border: none;
     width: 150px!important;
@@ -620,7 +619,7 @@ a {
 .pcc {
     width: 50px;
     height: 50px;
-    background: #3D6AD6;
+    background: #2657eb;
 }
 .borda {
   border:1px solid #ccc;
@@ -628,7 +627,7 @@ a {
 .pcca {
     width: 49px;
     height: 49px;
-    background: #3D6AD6;
+    background: #2657eb;
     border:1px solid #ccc;
 }
 .pccc {
@@ -673,14 +672,14 @@ a {
 }
 .vidp {
     display: block;
-    background: #3D6AD6;
+    background: #2657eb;
     flex-grow: 1;
     border: 2px solid #fff;
     height: 180px;
 }
 .vid {
     display: block;
-    background: #3D6AD6;
+    background: #2657eb;
     flex-grow: 1;
     border: 2px solid #fff;
     height: 100px;
@@ -689,16 +688,16 @@ a {
     width:88px;
     margin: 0 auto;
     height: 88px;
-    background: #3D6AD6;
+    background: #2657eb;
     border: 1px solid #ced0d4
 }
 .destaque-img {
-    background: #3D6AD6;
+    background: #2657eb;
     height: 220px;
     margin-top: 10px;
 }
 .destaque-imgg {
-    background: #3D6AD6;
+    background: #2657eb;
     height: 220px;
     width: 100%;
 }
@@ -753,7 +752,7 @@ button:hover {
     display: flex;
 }
 .post-foto {
-    background: #3d6ad6;
+    background: #2657eb;
     width: 40px;
     height: 40px;
 }
@@ -796,7 +795,7 @@ button:hover {
 .comenta-foto {
     width: 40px;
     height: 40px;
-    background: #3D6AD6
+    background: #2657eb
 }
 .comenta-inp {
     margin-left: 10px;
@@ -833,7 +832,7 @@ button:hover {
     margin-left: 10px;
 }
 .post-p {
-    background: #3d6ad6;
+    background: #2657eb;
     width: 100%;
     height: 400px;
 }
@@ -866,7 +865,7 @@ button:hover {
 .foto-perfil-p {
     width: 40px;
     height: 40px;
-    background: #3D6AD6
+    background: #2657eb
 }
 .destaquer {} .curt {
     margin-left: 10px;

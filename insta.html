@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OVERLEASY Instagram</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800|Roboto:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/insta.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/html2canvas.js"></script>
@@ -14,7 +15,7 @@
       <div class="fixaviso avi">
         <div class="ll">
           <div class="fix">
-              Ainda estamos em contrução, desculpe nos pelo transtorno :(
+              Ainda estamos em contrução, desculpe pelo transtorno :(
             </div>
         </div>
         <div class="lr">
@@ -47,13 +48,18 @@
       <div class="conteudo-insta">
         <div class="profile">
           <div class="profile-flex">
-              <label for="fileUpload">
                 <div class="foto-profile">
-              <div class="foto-borda" id="image-up-post">
+                  <label for="fotoinstac">
+                  <div class="ffooto">
+                    <input type="file" id="fotoinstac" name="fotoinstac" class="some" />
+                    <img id="ffinsta" class="imginsta" width="150" height="150" src="img/overleasy2.jpg" alt=" " />
 
-              </div>
+                  </div>
+                  </label>
+              <!--<div class="foto-borda" id="image-up-post">
+
+              </div>-->
             </div>
-          </label>
             <div class="texto-profile">
               <div class="p-titulo">
                 <div class="p1">
@@ -70,7 +76,7 @@
                 </ul>
               </div>
               <div class="sobre">
-                <textarea name="name" rows="7"class="text-sobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+                <textarea name="name" rows="5" class="text-sobre">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
                     <input id="fileUpload" multiple="multiple" type="file" name="fileUpload" class="some"/>
                     <input type="file" id="dstaqgg" name="dstaqgg" class="some" />
               </div>
@@ -80,7 +86,14 @@
         <div class="tamanho flex">
           <div class="foto">
             <div class="foto-insta" >
-                <label for="dstaqgg"><img id="destt" class="foto-insta" src="" alt="Clique aqui para carregar uma imagem" />  </label>
+                <div class="rel">
+                  <img src="img/photo-camera.svg" class="envia" alt="" width="15"/>
+                  <label for="dstaqgg">
+
+                    <img id="destt" class="foto-insta" src="" alt="" />
+
+                  </label>
+                </div>
             </div>
           </div>
           <div class="foto">
@@ -180,6 +193,24 @@
               }
             });
           });
+    </script>
+
+    <script type="text/javascript">
+      function fotoPerfila(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+
+          reader.onload = function(e) {
+            $('#ffinsta').attr('src', e.target.result);
+          }
+
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+      $("#fotoinstac").change(function() {
+        fotoPerfila(this);
+      });
     </script>
 
     <script type="text/javascript">
