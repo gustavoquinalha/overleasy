@@ -352,6 +352,7 @@ button:hover {
   margin-top: 10px;
   border:1px solid #ccc;
   transition: 1s;
+  border-radius: 4px;
 }
 .btn-insta {
   background: linear-gradient(to right, #F9B163, #C73984 , #6451C6);
@@ -363,6 +364,7 @@ button:hover {
   margin-top: 10px;
   border:1px solid #ccc;
   transition: 1s;
+  border-radius: 4px;
 }
 .btn-face:hover,
 .btn-insta:hover {
