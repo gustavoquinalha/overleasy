@@ -7,6 +7,21 @@ body,
 html {
     background: #FAFAFA
 }
+textarea:focus,
+input:focus {
+    outline: none;
+}
+*:focus {
+    outline: none;
+}
+.instagram {
+  background: #E9EBEE;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow: hidden
+}
 .menu-insta {
   width: 100%;
   background: #fafafa;
@@ -48,6 +63,10 @@ html {
   margin: 0 auto;
   height: 300px;
   width: 300px;
+  background: #de6161; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #de6161 , #2657eb);
 }
 .test {
@@ -131,6 +150,10 @@ footer {
   width: 150px;
   height: 150px;
   border-radius: 50%;
+  background: #de6161; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
   background: linear-gradient(to left, #de6161 , #2657eb);
   margin: 0 auto;
 }
@@ -191,6 +214,7 @@ footer {
   border: none;
   font-size: 16px;
   letter-spacing: 1px;
+  font-weight: 200
 }
 .likes ul li {
   display: inline-block;
@@ -213,4 +237,53 @@ footer {
     flex-wrap: wrap;
     margin: 0 auto;
     justify-content: center;
+}
+.relaviso {
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+
+.fixaviso {
+  width: 100%;
+  position: fixed;
+  height: 40px;
+  z-index: 99;
+  margin: 0 auto;
+}
+.avi {
+  background: #de6161; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to left, #de6161 , #2657eb);
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  margin: 0 auto;
+}
+
+.ll {
+  width: 90%;
+}
+.lr {
+  width: 10%;
+}
+.alertf {
+  background: transparent;
+  border:none;
+  opacity: 0.6
+}
+.alertf:hover {
+  background: transparent;
+  border:none;
+  opacity: 1
+}
+.fix {
+    width: 90%;
+    margin: 0 auto;
 }

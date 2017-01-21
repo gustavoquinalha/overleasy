@@ -10,7 +10,21 @@
     <script type="text/javascript" src="js/canvas2image.js"></script>
   </head>
   <body>
-    <div class="instagram">
+    <div class="relaviso" id="relaviso">
+      <div class="fixaviso avi">
+        <div class="ll">
+          <div class="fix">
+            Novas atualizaçõessss! Agora vocÊ tambem pode fazer o overlay do Instagram, olha que legal!!!
+            <button type="button" id="saveInsta" name="button" class="criar">SALVAR OVERLEASY</button>
+          </div>
+        </div>
+        <div class="lr">
+          <button type="button" name="fecha" class="alertf" id="fecha"><img src="img/close-alert.svg" width="20" alt="" /></button>
+
+        </div>
+      </div>
+    </div>
+    <div class="instagram" id="instagram">
       <div class="menu-insta">
         <div class="tamanho tamanho-menu menu-flex">
           <div class="test logo">
@@ -45,7 +59,7 @@
               </div>
               <div class="likes">
                 <ul>
-                  <li><span>200</span> publicações</li>
+                  <li><span>1.000</span> publicações</li>
                   <li><span>1.200</span> seguidores</li>
                   <li>seguindo <span>1.200</span></li>
                 </ul>
@@ -129,8 +143,38 @@
 
         </div>
       </footer>
+      <div class="img-out">
+
+      </div>
 
     </div>
+    <script type="text/javascript">
+    $("#fecha").click(function(){
+      $("#relaviso").toggle();
 
+    });
+    </script>
+    <script type="text/javascript">
+      $(function() {
+        $("#saveInsta").click(function() {
+          alert ("fsdf ");
+          html2canvas($("#instagram"), {
+            onrendered: function(canvas) {
+              theCanvas = canvas;
+              document.body.appendChild(canvas);
+
+              // Convert and download as image
+              Canvas2Image.saveAsPNG(canvas);
+              $("#img-out").append(canvas);
+              // Clean up
+              //var data = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+              //window.location.href = data;
+              window.location = canvas.toDataURL('image/png', '_blank');
+              document.body.removeChild(canvas);
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
