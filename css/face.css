@@ -1018,7 +1018,7 @@ img {
         display: none
     }
     .buttons {
-      margin-left: 10px;
+     text-align: center;
       margin: 0 auto;
       margin-bottom: 10px
     }
@@ -1027,7 +1027,7 @@ img {
       margin: 0 auto
     }
     .buttonsr ul {
-        text-align: left;
+        text-align: center;
     }
     .eaw {
       order:1
@@ -1050,6 +1050,9 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
+  .buttonsr ul {
+      text-align: left;
+  }
   .itemdd {
     width:100%
   }
@@ -1057,9 +1060,11 @@ img {
     width: 100%;
     height: 255px;
   }
-
-
-
+  .buttons {
+    margin-left: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px
+  }
   .content-l {
     width: 100%;
     margin: 0 auto
