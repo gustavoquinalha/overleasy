@@ -1018,7 +1018,7 @@ img {
         display: none
     }
     .buttons {
-      text-align: center;
+      margin-left: 10px;
       margin: 0 auto;
       margin-bottom: 10px
     }
@@ -1027,7 +1027,7 @@ img {
       margin: 0 auto
     }
     .buttonsr ul {
-        text-align: center;
+        text-align: left;
     }
     .eaw {
       order:1
