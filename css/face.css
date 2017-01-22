@@ -1062,6 +1062,7 @@ img {
   }
   .buttons {
     margin-left: 10px;
+    text-align: left;
     margin: 0 auto;
     margin-bottom: 10px
   }
