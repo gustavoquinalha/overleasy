@@ -5,35 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>OVERLEASY Instagram</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,700,800|Roboto:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/insta.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/html2canvas.js"></script>
     <script type="text/javascript" src="js/canvas2image.js"></script>
   </head>
   <body>
-    <div class="relaviso" id="relaviso">
-      <div class="fixaviso avi">
-        <div class="ll">
-          <div class="fix">
-              <img src="img/ov.svg" width="50" alt="" /> Ainda estamos em construção, desculpe pelo transtorno :(
-            </div>
-        </div>
-        <div class="lr">
-          <button type="button" name="fecha" class="alertf" id="fecha"><img src="img/close-alert.svg" width="20" alt="" /></button>
 
+      <div class="relaviso">
+        <div class="fixaviso mmmenu">
+          <div class="menu-new">
+            <div class="menu-logo-new">
+              <img src="img/ov2.svg" width="90" alt="" />
+            </div>
+            <div class="menu-classes">
+              <div class="mmcs">
+                <div class="mmc">
+                  <a href="index.html"><img src="img/logo-face.svg" width="20" alt="" /></a>
+                </div>
+                <div class="mmc">
+                  <a href="javascript:void(0);"><img src="img/instalogo2.svg" width="20" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      </div>
-      <div class="rel" id="">
-        <div class="salvar s">
-          <ul>
-            <li><a href="index.html"><button type="button" name="button" class="btn-face"><img src="img/logo.svg" width="15" alt="" /></button> </a></li>
-            <li><button type="button" name="button" class="btn-insta"><img src="img/insta-logo3.svg" width="15" alt="" /></button></li>
-            <li></li>
-          </ul>
-          <button type="button" id="saveInsta" name="button" class="criar"><img src="img/download.svg" width="10" alt="" /> SALVAR OVERLEASY</button>
+      <div class="relaviso" id="relaviso">
+        <div class="fixaviso avi">
+          <div class="ll">
+            <div class="fix">
+                Ainda estamos em construção, desculpe pelo transtorno :(
+              </div>
+          </div>
+          <div class="lr">
+            <button type="button" name="fecha" class="alertf" id="fecha"><img src="img/close-alert.svg" width="20" alt="" /></button>
+          </div>
         </div>
-      </div>
+        </div>
+        <div class="rel" id="">
+          <div class="salvar s">
+            <div class="ff">
+              <div class="ffg">
+                <button type="button" id="btnSave" name="button" class="criar"><img src="img/download.svg" width="10" alt="" /> OVERLEASY</button>
+                <button type="button" id="btnSave2" name="button" class="criar"><img src="img/download.svg" width="10" alt="" /> MOBILE</button>
+              </div>
+            </div>
+          </div>
+        </div>
     <div class="instagram" id="instagram">
       <div class="menu-insta">
         <div class="tamanho tamanho-menu menu-flex">
@@ -238,8 +258,28 @@
 
     <script type="text/javascript">
       $(function() {
-        $("#saveInsta").click(function() {
+        $("#btnSave").click(function() {
           html2canvas($("#instagram"), {
+            onrendered: function(canvas) {
+              theCanvas = canvas;
+              document.body.appendChild(canvas);
+
+              // Convert and download as image
+              Canvas2Image.saveAsPNG(canvas);
+              $("#img-out").append(canvas);
+              // Clean up
+              //var data = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+              //window.location.href = data;
+              window.location = canvas.toDataURL('image/png', '_blank');
+              document.body.removeChild(canvas);
+            }
+          });
+        });
+      });
+      $(function() {
+        $("#btnSave2").click(function() {
+          $("body").toggleClass("rapa");
+          html2canvas($("#widget"), {
             onrendered: function(canvas) {
               theCanvas = canvas;
               document.body.appendChild(canvas);

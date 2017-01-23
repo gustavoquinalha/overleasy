@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OVERLEASY Facebook</title>
+  <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/face.css">
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/html2canvas.js"></script>
@@ -31,39 +32,38 @@
 
 <body>
   <div class="relaviso" id="relaviso">
-
-    <div class="fixaviso avi">
-      <div class="ll">
-
-        <div class="fix">
-
-            <div class="whi">
-                <img src="img/ov.svg" width="50" alt="" /> Novas atualizaçõessss! Clique aqui e confira o overleasy do <a href="insta.html" class="avvv">instagram</a>
+    <div class="fixaviso mmmenu">
+      <div class="menu-new">
+        <div class="menu-logo-new">
+          <img src="img/ov2.svg" width="90" alt="" />
+        </div>
+        <div class="menu-classes">
+          <div class="mmcs">
+            <div class="mmc">
+              <img src="img/logo-face.svg" width="20" alt="" />
             </div>
-
+            <div class="mmc">
+              <a href="insta.html"><img src="img/instalogo2.svg" width="20" alt="" /></a>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="lr">
-        <button type="button" name="fecha" class="alertf" id="fecha"><img src="img/close-alert.svg" width="20" alt="" /></button>
-
-      </div>
     </div>
-
   </div>
+
   <div class="rel" id="">
     <div class="salvar s">
-      <ul>
-        <li><button type="button" name="button" class="btn-face"><img src="img/logo.svg" width="15" alt="" /></button></li>
-        <li><a href="insta.html"><button type="button" name="button" class="btn-insta"><img src="img/insta-logo3.svg" width="15" alt="" /></button></a></li>
-        <li></li>
-      </ul>
-      <button type="button" id="btnSave" name="button" class="criar"><img src="img/download.svg" width="10" alt="" /> SALVAR OVERLEASY</button>
+      <div class="ff">
+        <div class="ffg">
+          <button type="button" id="btnSave" name="button" class="criar"><img src="img/download.svg" width="10" alt="" /> OVERLEASY</button>
+          <button type="button" id="btnSave2" name="button" class="criar"><img src="img/download.svg" width="10" alt="" /> MOBILE</button>
+        </div>
+      </div>
     </div>
   </div>
   <div class="widget" id="widget">
 
-    <div class="">
+    <div id="rapa">
       <div class="top ">
         <div class="content-menu flex">
           <div class="logoo">
@@ -107,7 +107,7 @@
           </div>
         </div>
       </div>
-    </div>
+
     <form name="myForm">
       <div class="content">
         <div class="content-flex flex">
@@ -185,7 +185,6 @@
                   <div class="flex-b">
                     <div class="item ewa">
                       <div class="respp">
-                        <div class="rel">
                           <div class="ffv">
                               <label for="imgInp">
                                 <div class="foto-perfil2">
@@ -195,10 +194,9 @@
                           </label>
                           </div>
                           <div class="dados-pagina2">
-                            <h4>Overleasy</h4>
-                            <h5>@Overleasy</h5>
+                            <input type="text" name="nameedit" value="Overleasy" class="edit um">
+                            <input type="text" name="nameedit" value="@Clique para editar" class="edit">
                           </div>
-                        </div>
                       </div>
                       <div class="buttonsr oaa">
                         <ul>
@@ -222,7 +220,7 @@
                             <button class="btnc" type="button" name="button"><img src="img/reply.svg" class="btna" alt="" />Compartilhar</button>
                           </li>
                           <li>
-                            <button class="btnc oaaa" type="button" name="button"><img src="img/more.svg" class="btna" alt="" />Mais</button>
+                            <button class="btnc oaaal" type="button" name="button"><img src="img/more.svg" class="btna" alt="" />Mais</button>
                           </li>
                         </ul>
                       </div>
@@ -663,6 +661,7 @@
       </p>
     </div>
   </div>
+  </div>
   <script type="text/javascript">
   $("#fecha").click(function(){
     $("#relaviso").toggle();
@@ -670,26 +669,46 @@
   });
   </script>
   <script type="text/javascript">
-    $(function() {
-      $("#btnSave").click(function() {
-        $("#somc").toggleClass("main");
-        html2canvas($("#widget"), {
-          onrendered: function(canvas) {
-            theCanvas = canvas;
-            document.body.appendChild(canvas);
+  $(function() {
+    $("#btnSave").click(function() {
+      $("#somc").toggleClass("main");
+      html2canvas($("#widget"), {
+        onrendered: function(canvas) {
+          theCanvas = canvas;
+          document.body.appendChild(canvas);
 
-            // Convert and download as image
-            Canvas2Image.saveAsPNG(canvas);
-            $("#img-out").append(canvas);
-            // Clean up
-            //var data = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-            //window.location.href = data;
-            window.location = canvas.toDataURL('image/png', '_blank');
-            document.body.removeChild(canvas);
-          }
-        });
+          // Convert and download as image
+          Canvas2Image.saveAsPNG(canvas);
+          $("#img-out").append(canvas);
+          // Clean up
+          //var data = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+          //window.location.href = data;
+          window.location = canvas.toDataURL('image/png', '_blank');
+          document.body.removeChild(canvas);
+        }
       });
     });
+  });
+  $(function() {
+    $("#btnSave2").click(function() {
+      $("body").toggleClass("rapa");
+      html2canvas($("#widget"), {
+        onrendered: function(canvas) {
+          theCanvas = canvas;
+          document.body.appendChild(canvas);
+
+          // Convert and download as image
+          Canvas2Image.saveAsPNG(canvas);
+          $("#img-out").append(canvas);
+          // Clean up
+          //var data = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+          //window.location.href = data;
+          window.location = canvas.toDataURL('image/png', '_blank');
+          document.body.removeChild(canvas);
+        }
+      });
+    });
+  });
   </script>
   <script type="text/javascript">
     function readURL(input) {

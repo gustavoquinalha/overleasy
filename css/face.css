@@ -276,82 +276,7 @@ input:focus {
     font-size: 14px;
     opacity: 0.9
 }
-.salvar {
-  z-index: 99;
-  position: fixed;
-  background: rgba(255, 255, 255, 0));
-  bottom: 0px;
-  width: 100%;
-  text-align: right;
-}
-.salvar ul {
-  list-style: none;
-  float: left;
-  margin-left: 10px;
-}
-.salvar ul li {
-  display: inline-block;
-  margin-right: 0;
-  margin-left: 0;
-  padding: 0;
-}
-.btn-face {
-  background: #2657EB;
-  /*background: linear-gradient(to left, #de6161 , #2657eb);*/
-  border: none;
-  color: #fff;
-  height: 30px;
-  font-weight: 900;
-  width: 100%;
-  margin-top: 10px;
-  border:1px solid #ccc;
-  transition: 1s;
-  border-radius: 4px;
-}
-.btn-insta {
-  background: #2657EB;
-  border: none;
-  color: #fff;
-  height: 30px;
-  font-weight: 900;
-  width: 100%;
-  margin-top: 10px;
-  border:1px solid #ccc;
-  transition: 1s;
-  border-radius: 4px;
-}
-.btn-face:hover,
-.btn-insta:hover {
-  background: #815CA6
-}
-.s {
-  height: 50px;
-}
-.criarr {
-  background: #36a420;
-  /*background: linear-gradient(to left, #de6161 , #2657eb);*/
-  border: none;
-  color: #fff;
-  height: 30px;
-  font-weight: 900;
-  width: 100%;
-  margin-top: 10px;
-}
-.criar {
-    background: #36a420;
-    /*background: linear-gradient(to left, #de6161 , #2657eb);*/
-    border: none;
-    color: #fff;
-    height: 40px;
-    font-weight: 900;
-    width: 200px;
-    max-width: 90%;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-right: 10px;
-    transition: 1s;
-    /*animation: cria 1s linear 0s infinite alternate;*/
-}
+
 .main {
   display: none
 }
@@ -435,45 +360,7 @@ input:focus {
   z-index: 99;
   border: none
 }
-.relaviso {
-  width: 100%;
-  height: 40px;
-  position: relative;
-}
 
-.fixaviso {
-  width: 100%;
-  position: fixed;
-  height: 40px;
-  z-index: 99;
-}
-.avi {
-  background: linear-gradient(to left, #de6161 , #2657eb);
-  display: flex;
-  justify-content: center;
-  height: 40px;
-  align-items: center;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 900
-}
-
-.ll {
-  width: 90%;
-}
-.lr {
-  width: 10%;
-}
-.alertf {
-  background: transparent;
-  border:none;
-  opacity: 0.6
-}
-.alertf:hover {
-  background: transparent;
-  border:none;
-  opacity: 1
-}
 .oito {
     width: 100%;
 }
@@ -520,15 +407,12 @@ input:focus {
     margin-top: 10px;
 }
 .dados-pagina2 {
-    width: 80%;
+    flex:1
     margin-top: 10px;
-    display: inline-block;
-    right: 0;
-    position: absolute;
-    top: 0
+    margin-left: 10px
 }
 .ffv {
-  width: 20%;
+  background: red;
 }
 .dados-pagina h1 {
     opacity: 0.8;
@@ -1036,7 +920,7 @@ img {
       order:2
     }
     .respp {
-      display: block;
+      display: flex;
       width: 100%;
       min-width: 500px;
     }
@@ -1050,6 +934,9 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
+  .oaaal {
+    display: none
+  }
   .buttonsr ul {
       text-align: left;
   }
@@ -1073,8 +960,10 @@ img {
   .fdg {
     display: none
   }
-
-
+  .um {
+    font-weight: 900;
+    font-size: 14px;
+  }
   .ii {
     width: 100%;
     height: 475px;
@@ -1087,6 +976,9 @@ img {
   .capa {
       height: 255px;
       width: 100%;
+  }
+  .edit {
+    font-size: 12px;
   }
 
 }
