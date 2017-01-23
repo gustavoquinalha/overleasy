@@ -8,9 +8,9 @@ html {
     background: #FAFAFA
 }
 label {
-  margin: 0;
-  padding: 0;
-  flex-grow: 1
+    margin: 0;
+    padding: 0;
+    flex-grow: 1
 }
 textarea:focus,
 input:focus {
@@ -20,304 +20,308 @@ input:focus {
     outline: none;
 }
 .instagram {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-  overflow: hidden
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow: hidden
 }
 .menu-insta {
-  width: 100%;
-  background: #fafafa;
-  border-bottom: 1px solid rgba(0,0,0,.0975);
-  margin-bottom: 20px;
+    width: 100%;
+    background: #fafafa;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
+    margin-bottom: 20px;
 }
 .tamanho-menu {
-  height: 80px;
+    height: 80px;
 }
 .tamanho {
-  width: 1000px;
-  /*max-width: calc(100% - 40px);*/
-  max-width: 90%;
-  margin: 0 auto;
+    width: 1000px;
+    /*max-width: calc(100% - 40px);*/
+
+    max-width: 90%;
+    margin: 0 auto;
 }
 .menu-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 .logo {
-  text-align: left!important;
+    text-align: left!important;
 }
-.logo img{
-  display: inline-block;
-  margin-right: 10px;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+.logo img {
+    display: inline-block;
+    margin-right: 10px;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+
+    filter: grayscale(100%);
 }
 .foto {
-  flex-grow: 1;
-  height: 300px;
-  padding-bottom: 20px;
-  flex-basis: 300px;
-  cursor: pointer;
+    flex-grow: 1;
+    height: 300px;
+    padding-bottom: 20px;
+    flex-basis: 300px;
+    cursor: pointer;
 }
-.borda-insta{
-  border:1px solid #e6e6e6;
+.borda-insta {
+    border: 1px solid #e6e6e6;
 }
 .foto-insta {
-  max-width: 100%;
-  margin: 0 auto;
-  height: 300px;
-  width: 300px;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 99;
-  transition: 1s;
-  background: #e6e6e6;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 99;
+    transition: 1s;
+    background: #e6e6e6;
 }
 .thumb-image {
-  position: absolute;
-  clip-path: ellipse(60px 40px at 75px 30px);
-  border-radius: 50%;
-  margin: 0 auto;
+    position: absolute;
+    clip-path: ellipse(60px 40px at 75px 30px);
+    border-radius: 50%;
+    margin: 0 auto;
 }
 .test {
-  flex-grow: 1;
-  max-width: 33.333%;
-  text-align: center
+    flex-grow: 1;
+    max-width: 33.333%;
+    text-align: center
 }
 .logo img:first-child {
-  border-right:1px solid #262626;
-  padding-right: 10px;
+    border-right: 1px solid #262626;
+    padding-right: 10px;
 }
 .busca-input {
-  width: 215px;
-  max-width: 100%;
-  height: 25px;
-  border-radius: 4px;
-  background: transparent;
-  text-align: center;
-  border: 1px solid #dbdbdb;
-  margin: 0 auto;
+    width: 215px;
+    max-width: 100%;
+    height: 25px;
+    border-radius: 4px;
+    background: transparent;
+    text-align: center;
+    border: 1px solid #dbdbdb;
+    margin: 0 auto;
 }
 .icones {
-  text-align: right!important
+    text-align: right!important
 }
 .icones img {
-  display: inline-block;
-  margin-right: 20px;
-  cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
 }
-.conteudo-insta {
-
-}
-footer {
-  width: calc(1000px - 30px);
-  max-width: 90%;
-  margin: 0 auto;
-  padding-bottom: 50px;
-  padding-top: 50px;
+.conteudo-insta {} footer {
+    width: calc(1000px - 30px);
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 .rodape {
-  display: flex;
-  margin: 0 auto;
-  font-size: 12px;
-  color: #003569;
-  font-weight: 900;
-  padding-bottom: 50px;
+    display: flex;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #003569;
+    font-weight: 900;
+    padding-bottom: 50px;
 }
 .rodape ul {
-  list-style: none;
+    list-style: none;
 }
 .rodape ul li {
-  display: inline-block;
-  margin-right: 5px;
-  cursor: pointer;
-  text-transform: uppercase;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 .rodape-esquerdo {
-  flex-grow: 10;
+    flex-grow: 10;
 }
 .rodape-direito {
-  flex-grow: 1;
-  text-align: right;
-  color: #000!important;
-  opacity: 0.4
+    flex-grow: 1;
+    text-align: right;
+    color: #000!important;
+    opacity: 0.4
 }
 .botao {
-  width: 100%;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .profile {
-  width: 1000px;
-  max-width: 100%;
-  margin: 0 auto;
-  margin-bottom: 10px;
-  margin-top: 50px;
-  overflow: hidden;
-  letter-spacing: 1px;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    overflow: hidden;
+    letter-spacing: 1px;
 }
 .foto-borda {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, #de6161 , #2657eb);
-  background: #de6161;
-  background-color: #de6161;
-  margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: -webkit-linear-gradient(to left, #de6161, #2657eb);
+    /* For Safari 5.1 to 6.0 */
+
+    background: -o-linear-gradient(to left, #de6161, #2657eb);
+    /* For Opera 11.1 to 12.0 */
+
+    background: -moz-linear-gradient(to left, #de6161, #2657eb);
+    /* For Firefox 3.6 to 15 */
+
+    background: linear-gradient(to left, #de6161, #2657eb);
+    background: #de6161;
+    background-color: #de6161;
+    margin: 0 auto;
 }
 .profile-flex {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
 }
 .foto-profile {
-  flex-grow: 500px;
-  min-width: 280px;
-  text-align: center;
+    flex-grow: 500px;
+    min-width: 280px;
+    text-align: center;
 }
 label {
-  cursor: pointer;
+    cursor: pointer;
 }
 .texto-profile {
-  flex:1;
+    flex: 1;
 }
 .icon-20-resp {
-  width: 20px;
+    width: 20px;
 }
 .ffooto {
-  width: 150px;
-  text-align: center;
-  height: 150px;
-  margin: 0 auto;
-  border-radius: 50%;
-  border:1px solid #E6E6E6;
-  overflow: hidden;
+    width: 150px;
+    text-align: center;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 1px solid #E6E6E6;
+    overflow: hidden;
 }
 img {
- content: "";
+    content: "";
 }
 .imginsta {
-  background: #E6E6E6;
-  border-radius: 50%;
-  border:none!important;
-  outline: none!important;
-  
+    background: #E6E6E6;
+    border-radius: 50%;
+    border: none!important;
+    outline: none!important;
 }
-
 .nomepage {
-  background: transparent;
-  border:none;
-  font-size: 30px;
-  font-weight: 200px;
-  letter-spacing: 1px;
-  opacity: 0.7
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    font-weight: 200px;
+    letter-spacing: 1px;
+    opacity: 0.7
 }
 .avvv {
-  color: #fff!important;
+    color: #fff!important;
 }
 .whi {
-  color: #fff!important;
+    color: #fff!important;
 }
 .p1 {
     display: inline-block;
     overflow: hidden;
 }
 .some {
-  display: none
+    display: none
 }
 .editar-perfil {
-  border: 1px solid #ccc;
-  color: #262626;
-  background: transparent;
-  height: 30px;
-  width: 120px;
-  font-weight: 900;
-  border-radius: 4px;
-  opacity: 0.7;
-  cursor: pointer;
+    border: 1px solid #ccc;
+    color: #262626;
+    background: transparent;
+    height: 30px;
+    width: 120px;
+    font-weight: 900;
+    border-radius: 4px;
+    opacity: 0.7;
+    cursor: pointer;
 }
 .ib {
-  display: inline-block;
+    display: inline-block;
 }
 .more {
-  margin-left: 20px;
-  padding-top: 5px;
+    margin-left: 20px;
+    padding-top: 5px;
 }
 .likes {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  opacity: 0.7
+    padding-top: 20px;
+    padding-bottom: 20px;
+    opacity: 0.7
 }
 .likes span {
-  font-weight: 900
+    font-weight: 900
 }
 .likes ul {
-  list-style: none
+    list-style: none
 }
 .sobre {
-  width: 100%;
+    width: 100%;
 }
 .envia {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  z-index: 1;
-  opacity: 0.2
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    opacity: 0.2
 }
 .enviai {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  z-index: 1;
-  opacity: 0.9
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+    opacity: 0.9
 }
 .enviap {
-  padding-top: 25%;
+    padding-top: 25%;
 }
 .envia2 {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  opacity: 0.2
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.2
 }
 .foto-insta:hover {
-  background: #de6161
+    background: #de6161
 }
 .text-sobre {
-  width: 90%;
-  background: transparent;
-  border: none;
-  font-size: 16px;
-  letter-spacing: 0.6px;
-  font-weight: 400;
-  opacity: 0.7
+    width: 90%;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    opacity: 0.7
 }
 .likes ul li {
-  display: inline-block;
-  margin-right: 30px;
-  font-weight: 400
+    display: inline-block;
+    margin-right: 30px;
+    font-weight: 400
 }
 .botao input {
-  background: #3897F0;
-  border-radius: 4px;
-  color: #fff;
-  height: 35px;
-  font-weight: 500;
-  font-size: 16px;
-  border: none;
-  margin: 0 auto;
-  width: 200px;
-  max-width: 90%;
+    background: #3897F0;
+    border-radius: 4px;
+    color: #fff;
+    height: 35px;
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    margin: 0 auto;
+    width: 200px;
+    max-width: 90%;
 }
 .flex {
     display: flex;
@@ -326,7 +330,7 @@ img {
     justify-content: center;
 }
 .rel {
-  position: relative;
+    position: relative;
 }
 button {
     background: #f6f7f9;
@@ -341,176 +345,185 @@ button {
     cursor: pointer;
 }
 .btn-face {
-  background: #2657EB;
-  /*background: linear-gradient(to left, #de6161 , #2657eb);*/
-  border: none;
-  color: #fff;
-  height: 30px;
-  font-weight: 900;
-  width: 100%;
-  margin-top: 10px;
-  border:1px solid #ccc;
-  transition: 1s;
-  border-radius: 4px;
+    background: #2657EB;
+    /*background: linear-gradient(to left, #de6161 , #2657eb);*/
+
+    border: none;
+    color: #fff;
+    height: 30px;
+    font-weight: 900;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    transition: 1s;
+    border-radius: 4px;
 }
 .btn-insta {
-  background: #2657EB;
-  border: none;
-  color: #fff;
-  height: 30px;
-  font-weight: 900;
-  width: 100%;
-  margin-top: 10px;
-  border:1px solid #ccc;
-  transition: 1s;
-  border-radius: 4px;
+    background: #2657EB;
+    border: none;
+    color: #fff;
+    height: 30px;
+    font-weight: 900;
+    width: 100%;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    transition: 1s;
+    border-radius: 4px;
 }
 .btn-face:hover,
 .btn-insta:hover {
-  background: #815CA6
+    background: #815CA6
 }
 .s {
-  height: 50px;
+    height: 50px;
 }
 .criarr {
-  background: #36a420;
-  /*background: linear-gradient(to left, #de6161 , #2657eb);*/
-  border: none;
-  color: #fff;
-  height: 30px;
-  font-weight: 900;
-  width: 100%;
-  margin-top: 10px;
+    background: #36a420;
+    /*background: linear-gradient(to left, #de6161 , #2657eb);*/
+
+    border: none;
+    color: #fff;
+    height: 30px;
+    font-weight: 900;
+    width: 100%;
+    margin-top: 10px;
 }
 .relaviso {
-  width: 100%;
-  height: 40px;
-  position: relative;
+    width: 100%;
+    height: 40px;
+    position: relative;
 }
-
 .fixaviso {
-  width: 100%;
-  position: fixed;
-  height: 40px;
-  z-index: 99;
-  margin: 0 auto;
-  font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    position: fixed;
+    height: 40px;
+    z-index: 99;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
 }
 .avi {
-  font-family: 'Open Sans', sans-serif;
-  background: #de6161; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, #de6161 , #2657eb);
-  display: flex;
-  justify-content: center;
-  height: 40px;
-  align-items: center;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 900;
-  margin: 0 auto;
-}
+    font-family: 'Open Sans', sans-serif;
+    background: #de6161;
+    /* For browsers that do not support gradients */
 
+    background: -webkit-linear-gradient(to left, #de6161, #2657eb);
+    /* For Safari 5.1 to 6.0 */
+
+    background: -o-linear-gradient(to left, #de6161, #2657eb);
+    /* For Opera 11.1 to 12.0 */
+
+    background: -moz-linear-gradient(to left, #de6161, #2657eb);
+    /* For Firefox 3.6 to 15 */
+
+    background: linear-gradient(to left, #de6161, #2657eb);
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 900;
+    margin: 0 auto;
+}
 .ll {
-  width: 90%;
+    width: 90%;
 }
 .lr {
-  width: 10%;
+    width: 10%;
 }
 .alertf {
-  background: transparent;
-  border:none;
-  opacity: 0.6
+    background: transparent;
+    border: none;
+    opacity: 0.6
 }
 .alertf:hover {
-  background: transparent;
-  border:none;
-  opacity: 1
+    background: transparent;
+    border: none;
+    opacity: 1
 }
 .fix {
     width: 90%;
     margin: 0 auto;
 }
 .so-um {
-  width: 600px;
-  max-width: 100%;
-  border-radius: 2px;
-  margin: 0 auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #e6e6e6
+    width: 600px;
+    max-width: 100%;
+    border-radius: 2px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #e6e6e6
 }
 .so-titulo {
-  height: 64px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 .so {
-  background: transparent;
-  border:none;
-  font-weight: 900;
-  color: #262626
+    background: transparent;
+    border: none;
+    font-weight: 900;
+    color: #262626
 }
 .soo-f {
     margin-top: 18px;
     margin-left: 15px;
 }
 .soo-fdata {
-  flex: 1;
-  margin-top: 18px;
-  margin-right: 15px;
-  text-align: right;
+    flex: 1;
+    margin-top: 18px;
+    margin-right: 15px;
+    text-align: right;
 }
-.soo-fdata span{
-  font-size: 12px!important
+.soo-fdata span {
+    font-size: 12px!important
 }
 .so-foto-p {
-  width: 28px;
-  height:28px;
-  border-radius: 50%;
-  background: #2657eb
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: #E6E6E6
 }
 .so-foto {
-  width: 600px;
-  height: 600px;
-  background: url('https://scontent-gru2-1.cdninstagram.com/t51.2885-15/e35/16123465_148312789003782_6484431534899068928_n.jpg?ig_cache_key=MTQzMzY3NDMwNTE2NTgyNjIwOA%3D%3D.2');
-  background-size:100%
+    width: 600px;
+    height: 600px;
+    background: #E6E6E6;
+    ;
+    background-size: 100%
 }
 @media only screen and (max-width: 500px) {
-  .profile-flex {
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .nomepage {
-    text-align: center;
-  }
-  .foto-profile {
-    width: 100%;
-  }
-  .icon-20-resp {
-    width: 15px;
-  }
-  .some {
-    display: none!important
-  }
-  .logo img:first-child {
-    border:none!important;
-    padding-right: 0px!important;
-  }
-  .test:first-child {
-    width: 50px!important;
-    max-width: 50px!important;
-  }
-  .icones img {
-    margin-right: 1px;
-  }
-  .busca {
-    width: 200px;
-    max-width: 100%!important;
-  }
+    .profile-flex {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .nomepage {
+        text-align: center;
+    }
+    .foto-profile {
+        width: 100%;
+    }
+    .icon-20-resp {
+        width: 15px;
+    }
+    .some {
+        display: none!important
+    }
+    .logo img:first-child {
+        border: none!important;
+        padding-right: 0px!important;
+    }
+    .test:first-child {
+        width: 50px!important;
+        max-width: 50px!important;
+    }
+    .icones img {
+        margin-right: 1px;
+    }
+    .busca {
+        width: 200px;
+        max-width: 100%!important;
+    }
 }
