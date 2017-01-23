@@ -63,21 +63,19 @@ input:focus {
   flex-basis: 300px;
   cursor: pointer;
 }
+.borda-insta{
+  border:1px solid #e6e6e6;
+}
 .foto-insta {
   max-width: 100%;
   margin: 0 auto;
   height: 300px;
   width: 300px;
-  background: -webkit-linear-gradient(to left, #de6161 , #2657eb); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(to left, #de6161 , #2657eb); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(to left, #de6161 , #2657eb); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to left, #de6161 , #2657eb);
-  background: #2657eb;
-  background-color: #2657eb;
   cursor: pointer;
   overflow: hidden;
   z-index: 99;
-  transition: 1s
+  transition: 1s;
+  background: #e6e6e6;
 }
 .thumb-image {
   position: absolute;
@@ -183,12 +181,18 @@ footer {
   text-align: left;
 }
 .foto-profile {
-  cursor: pointer;
   flex-grow: 500px;
   min-width: 280px;
+  text-align: center;
+}
+label {
+  cursor: pointer;
 }
 .texto-profile {
   flex:1;
+}
+.icon-20-resp {
+  width: 20px;
 }
 .ffooto {
   width: 150px;
@@ -196,16 +200,18 @@ footer {
   height: 150px;
   margin: 0 auto;
   border-radius: 50%;
-  border:1px solid #ccc
+  border:1px solid #E6E6E6;
+  overflow: hidden;
 }
 img {
  content: "";
 }
 .imginsta {
-  background: #2657eb;
+  background: #E6E6E6;
   border-radius: 50%;
   border:none!important;
-  outline: none!important inherit;
+  outline: none!important;
+  
 }
 
 .nomepage {
@@ -268,11 +274,27 @@ img {
   z-index: 1;
   opacity: 0.2
 }
+.enviai {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  opacity: 0.9
+}
+.enviap {
+  padding-top: 25%;
+}
+.envia2 {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  opacity: 0.2
+}
 .foto-insta:hover {
   background: #de6161
 }
 .text-sobre {
-  width: 100%;
+  width: 90%;
   background: transparent;
   border: none;
   font-size: 16px;
@@ -410,4 +432,85 @@ button {
 .fix {
     width: 90%;
     margin: 0 auto;
+}
+.so-um {
+  width: 600px;
+  max-width: 100%;
+  border-radius: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e6e6e6
+}
+.so-titulo {
+  height: 64px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.so {
+  background: transparent;
+  border:none;
+  font-weight: 900;
+  color: #262626
+}
+.soo-f {
+    margin-top: 18px;
+    margin-left: 15px;
+}
+.soo-fdata {
+  flex: 1;
+  margin-top: 18px;
+  margin-right: 15px;
+  text-align: right;
+}
+.soo-fdata span{
+  font-size: 12px!important
+}
+.so-foto-p {
+  width: 28px;
+  height:28px;
+  border-radius: 50%;
+  background: #2657eb
+}
+.so-foto {
+  width: 600px;
+  height: 600px;
+  background: url('https://scontent-gru2-1.cdninstagram.com/t51.2885-15/e35/16123465_148312789003782_6484431534899068928_n.jpg?ig_cache_key=MTQzMzY3NDMwNTE2NTgyNjIwOA%3D%3D.2');
+  background-size:100%
+}
+@media only screen and (max-width: 500px) {
+  .profile-flex {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nomepage {
+    text-align: center;
+  }
+  .foto-profile {
+    width: 100%;
+  }
+  .icon-20-resp {
+    width: 15px;
+  }
+  .some {
+    display: none!important
+  }
+  .logo img:first-child {
+    border:none!important;
+    padding-right: 0px!important;
+  }
+  .test:first-child {
+    width: 50px!important;
+    max-width: 50px!important;
+  }
+  .icones img {
+    margin-right: 1px;
+  }
+  .busca {
+    width: 200px;
+    max-width: 100%!important;
+  }
 }
