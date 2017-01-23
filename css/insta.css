@@ -179,6 +179,16 @@ footer {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.foto-profile {
+  cursor: pointer;
+  flex-grow: 500px;
+  min-width: 280px;
+}
+.texto-profile {
+  flex:1;
 }
 .ffooto {
   width: 150px;
@@ -197,18 +207,7 @@ img {
   border:none!important;
   outline: none!important inherit;
 }
-.foto-profile {
-  flex-grow: 1;
-  cursor: pointer;
-  min-height: 150px;
-}
-.clip-ellipse {
-  clip-path: ellipse(60px 40px at 0px 0px);
-  /* OLD VALUE example: ellipse(245px, 80px, 75px, 30px); */
-}
-.texto-profile {
-  flex-grow: 1
-}
+
 .nomepage {
   background: transparent;
   border:none;
