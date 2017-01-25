@@ -810,5 +810,37 @@
               });
             });
     </script>
+    <script src="//cdn.pushnews.eu/push/ilabspush.min.js" async></script>
+<script type="text/javascript">
+    var _ilabsPushConfig = {
+        optin: {
+            activation: {
+                type: "auto"
+            },
+            "%desktopImage%": "https://icons.pushnews.eu/2017/01/25/58890a62be9cb.jpg",
+            "%desktopTxtTitle%": "Fique ligado!",
+            "%desktopTxtBody%": "Receba conteúdos exclusivos para você!",
+            "%desktopTxtButtonNo%": "Não, obrigado",
+            "%desktopTxtButtonYes%": "Eba, quero!",
+            "%mobileImage%": "https://icons.pushnews.eu/2017/01/25/58890a62be9cb.jpg",
+            "%mobileTxtTitle%": "Fique ligado!",
+            "%mobileTxtBody%": "Receba conteúdos exclusivos para você!",
+            "%mobileTxtButtonNo%": "Não, obrigado",
+            "%mobileTxtButtonYes%": "Eba, quero!"
+        },
+        popup: {
+            name: "Overleasy",
+            domain: "gustavoquinalha-github-io.pushnews.eu",
+            appId: "71fc92af-cd3f-428e-888a-c6f086405023",
+            actionMessage: "quer te enviar notificações:",
+            notificationIcon: "https://icons.pushnews.eu/2017/01/25/58890a62be9cb.jpg",
+            notificationTitle: "Exemplo",
+            notificationMessage: "Esta é uma notificação exemplo",
+            caption: "(pode cancelar quando quiser)"
+        }
+    };
+    var IlabsPush = IlabsPush || [];
+    IlabsPush.push(["_initHttps", _ilabsPushConfig]);
+</script>
   </body>
 </html>
